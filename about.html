@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>About Us | DineStar</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/ds-logo.svg">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0b4211",
+                        "primary-container": "#265a26",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#96d08f",
+                        "secondary": "#5e6140",
+                        "secondary-container": "#e3e6bb",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#646745",
+                        "tertiary": "#0f4200",
+                        "tertiary-container": "#285a16",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#97d07e",
+                        "surface": "#fafbea",
+                        "surface-bright": "#fafbea",
+                        "surface-dim": "#dadbcc",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f4f5e5",
+                        "surface-container": "#eeefdf",
+                        "surface-container-high": "#e8e9da",
+                        "surface-container-highest": "#e2e4d4",
+                        "on-surface": "#1a1d13",
+                        "on-surface-variant": "#41493f",
+                        "outline": "#72796e",
+                        "outline-variant": "#c1c9bb",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "sans": ["Plus Jakarta Sans", "ui-sans-serif", "system-ui", "sans-serif"],
+                    }
+                },
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .editorial-shadow { box-shadow: 0 10px 30px rgba(26, 29, 19, 0.05); }
+        .organic-gradient { background: linear-gradient(135deg, #0b4211 0%, #265a26 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 glass-nav border-b border-outline-variant/10">
+        <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-7xl mx-auto">
+            <div class="flex items-center gap-3">
+                <img alt="DineStar Logo" class="h-10 w-10 object-contain" src="assets/images/ds-logo.svg">
+                <span class="text-2xl font-bold text-primary tracking-tight">DineStar</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-secondary hover:text-primary transition-colors text-sm tracking-wide" href="index.html">Home</a>
+                <a class="text-secondary hover:text-primary transition-colors text-sm tracking-wide" href="products.html">Products</a>
+                <a class="text-secondary hover:text-primary transition-colors text-sm tracking-wide" href="services.html">Our Services</a>
+                <a class="text-primary font-bold border-b-2 border-primary pb-1 text-sm tracking-wide" href="about.html">About Us</a>
+                <a class="text-secondary hover:text-primary transition-colors text-sm tracking-wide" href="brochure.html">Brochure</a>
+                <a class="text-secondary hover:text-primary transition-colors text-sm tracking-wide" href="contact.html">Contact Us</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="md:hidden p-2 text-primary">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
+                <div>
+                    <h1 class="text-5xl font-extrabold text-primary mb-6 tracking-tight">Our Story</h1>
+                    <p class="text-lg text-on-surface-variant leading-relaxed mb-6">
+                        DineStar was founded on the belief that luxury and sustainability are not mutually exclusive. Our journey began in the lush palm groves of South Asia, where we discovered the incredible potential of the naturally fallen Areca palm leaf.
+                    </p>
+                    <p class="text-lg text-on-surface-variant leading-relaxed">
+                        Today, we are a global leader in sustainable dinnerware, committed to ethical sourcing, zero-waste manufacturing, and providing our customers with products that are as beautiful as they are kind to the planet.
+                    </p>
+                </div>
+                <div class="relative">
+                    <img src="https://picsum.photos/seed/about1/800/600" alt="Our Team" class="rounded-2xl editorial-shadow w-full" referrerPolicy="no-referrer">
+                    <div class="absolute -bottom-6 -left-6 bg-primary-container text-on-primary-container p-8 rounded-2xl editorial-shadow hidden lg:block">
+                        <p class="text-3xl font-bold mb-1">10+</p>
+                        <p class="text-sm uppercase tracking-widest font-bold">Years of Innovation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-surface-container-low rounded-3xl p-12 md:p-20">
+                <h2 class="text-3xl font-bold text-primary mb-12 text-center">Our Core Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mx-auto mb-6 editorial-shadow">
+                            <span class="material-symbols-outlined text-3xl">eco</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Sustainability</h3>
+                        <p class="text-on-surface-variant">Every decision we make is guided by its impact on the environment.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mx-auto mb-6 editorial-shadow">
+                            <span class="material-symbols-outlined text-3xl">diamond</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Quality</h3>
+                        <p class="text-on-surface-variant">We never compromise on the premium feel and durability of our products.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mx-auto mb-6 editorial-shadow">
+                            <span class="material-symbols-outlined text-3xl">groups</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Community</h3>
+                        <p class="text-on-surface-variant">We support the local communities that harvest and craft our materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-highest w-full">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-6 md:px-12 py-16 max-w-7xl mx-auto">
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl font-bold text-primary tracking-tight">DineStar</span>
+                </div>
+                <p class="text-secondary leading-relaxed max-w-xs">
+                    Redefining dinnerware through the wisdom of nature. Premium palm leaf containers for a sustainable future.
+                </p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary hover:scale-110 transition-transform editorial-shadow" href="#">
+                        <span class="material-symbols-outlined">public</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary hover:scale-110 transition-transform editorial-shadow" href="#">
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8 md:col-span-2">
+                <div>
+                    <h4 class="font-bold text-primary mb-6 uppercase text-sm tracking-widest">Company</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-secondary hover:text-primary transition-colors" href="about.html">About Us</a></li>
+                        <li><a class="text-secondary hover:text-primary transition-colors" href="#">Sustainability Report</a></li>
+                        <li><a class="text-secondary hover:text-primary transition-colors" href="#">Our Process</a></li>
+                        <li><a class="text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-primary mb-6 uppercase text-sm tracking-widest">Solutions</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-secondary hover:text-primary transition-colors" href="#">Wholesale Inquiries</a></li>
+                        <li><a class="text-secondary hover:text-primary transition-colors" href="services.html">Event Services</a></li>
+                        <li><a class="text-secondary hover:text-primary transition-colors" href="brochure.html">Brochure</a></li>
+                        <li><a class="text-secondary hover:text-primary transition-colors" href="contact.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-secondary text-center md:text-left">
+                © 2024 DineStar Sustainable Solutions. Crafted with 100% natural palm leaves.
+            </p>
+            <div class="flex gap-6">
+                <span class="text-xs font-bold text-primary">ISO 9001 CERTIFIED</span>
+                <span class="text-xs font-bold text-primary">FDA APPROVED</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
