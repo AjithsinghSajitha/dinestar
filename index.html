@@ -3,29 +3,30 @@ layout: default
 title: DineStar | Sustainable Palm Leaf Dinnerware
 nav_active: home
 ---
+{% assign hero = site.data.home.hero %}
 <!-- Hero Section -->
     <header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-surface">
         <div class="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div class="z-10">
-                <span class="text-tertiary font-semibold tracking-widest text-sm uppercase mb-4 block">Sustainable Luxury</span>
+                <span class="text-tertiary font-semibold tracking-widest text-sm uppercase mb-4 block">{{ hero.eyebrow }}</span>
                 <h1 class="text-6xl md:text-7xl font-extrabold text-primary leading-tight tracking-tighter mb-6">
-                    Nature's Craft <br> for Your Table
+                    {{ hero.heading_line_1 }} <br> {{ hero.heading_line_2 }}
                 </h1>
                 <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-lg">
-                    Exquisite dinnerware hand-pressed from naturally fallen Areca palm leaves. Sustainable luxury that breathes life into every meal.
+                    {{ hero.description }}
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <button class="px-8 py-4 organic-gradient text-on-primary rounded-3xl font-bold text-lg hover:scale-105 transition-transform editorial-shadow">
-                        Explore Collection
+                        {{ hero.primary_button }}
                     </button>
                     <button class="px-8 py-4 bg-surface-container-lowest text-primary border border-outline-variant/20 rounded-3xl font-bold text-lg hover:bg-surface-container-low transition-colors">
-                        Our Story
+                        {{ hero.secondary_button }}
                     </button>
                 </div>
             </div>
             <div class="relative group">
                 <div class="absolute -inset-4 bg-tertiary-container/10 rounded-full blur-3xl group-hover:bg-tertiary-container/20 transition-colors"></div>
-                <img alt="Palm Leaf Dinnerware" class="relative rounded-2xl editorial-shadow w-full aspect-square object-cover transform rotate-2 hover:rotate-0 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD69Gb7P0TzxuD7TSPcYkigNZC8qKPITHmfFobZvUEXKdsj0K4-pTKZY0N2U58amAiFVg_axQZX9cDriyBkFx5cw517Po9zhwt3TQy8-cPrB4gtnAoMnWWfISe5bEh1UdyroqXn0Exkr4BMp-nf67W6xktsAm1Sb13I4P1yj3jIELIV13ymHX6ylBngK7TcMeT38NsEALwQh3pGfjYg-ERuoDtd5Ko9BAdc014W9UhTFE38tQVpbNcpSKnVV7gm5FAD9mVAor6qRg58" referrerPolicy="no-referrer">
+                <img alt="{{ hero.image_alt }}" class="relative rounded-2xl editorial-shadow w-full aspect-square object-cover transform rotate-2 hover:rotate-0 transition-transform duration-500" src="{{ hero.image }}" referrerPolicy="no-referrer">
             </div>
         </div>
     </header>

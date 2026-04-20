@@ -1,0 +1,14 @@
+- name: Artisan Square Plate
+  description: Perfect for main courses and elegant presentations.
+  price: $24.99 / pack
+  image: https://picsum.photos/seed/plate1/600/600
+
+- name: Deep Salad Bowl
+  description: Ideal for salads, soups, and shared appetizers.
+  price: $19.99 / pack
+  image: https://picsum.photos/seed/bowl1/600/600
+
+- name: Wooden Cutlery Set
+  description: Biodegradable birch wood forks, knives, and spoons.
+  price: $12.99 / pack
+  image: https://picsum.photos/seed/cutlery1/600/600

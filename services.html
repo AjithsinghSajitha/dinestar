@@ -4,56 +4,33 @@ title: Our Services | DineStar
 nav_active: services
 ---
 <main class="pt-32 pb-24">
-        <div class="max-w-7xl mx-auto px-6 md:px-12">
-            <header class="mb-16 text-center">
-                <h1 class="text-5xl font-extrabold text-primary mb-4 tracking-tight">Our Services</h1>
-                <p class="text-lg text-on-surface-variant max-w-2xl mx-auto">Beyond products, we offer comprehensive solutions for businesses and events looking to make a sustainable impact.</p>
-            </header>
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <header class="mb-16 text-center">
+            <h1 class="text-5xl font-extrabold text-primary mb-4 tracking-tight">Our Services</h1>
+            <p class="text-lg text-on-surface-variant max-w-2xl mx-auto">Beyond products, we offer comprehensive solutions for businesses and events looking to make a sustainable impact.</p>
+        </header>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Service 1 -->
-                <div class="flex flex-col md:flex-row gap-6 items-start">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {% for service in site.data.services %}
+            <div class="flex flex-col md:flex-row gap-6 items-start">
+                {% case service.color %}
+                  {% when 'primary' %}
                     <div class="w-16 h-16 shrink-0 bg-primary-container rounded-2xl flex items-center justify-center text-on-primary-container">
-                        <span class="material-symbols-outlined text-3xl">event</span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-primary mb-3">Event Catering Solutions</h3>
-                        <p class="text-on-surface-variant leading-relaxed">We provide bulk dinnerware and customized setups for weddings, corporate events, and festivals. Our team ensures your event is both beautiful and waste-free.</p>
-                    </div>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="flex flex-col md:flex-row gap-6 items-start">
+                  {% when 'secondary' %}
                     <div class="w-16 h-16 shrink-0 bg-secondary-container rounded-2xl flex items-center justify-center text-on-secondary-container">
-                        <span class="material-symbols-outlined text-3xl">branding_watermark</span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-primary mb-3">Custom Branding</h3>
-                        <p class="text-on-surface-variant leading-relaxed">Elevate your brand with custom-stamped palm leaf products. We can laser-etch or heat-press your logo onto our plates and bowls for a unique, organic branding experience.</p>
-                    </div>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="flex flex-col md:flex-row gap-6 items-start">
+                  {% when 'tertiary' %}
                     <div class="w-16 h-16 shrink-0 bg-tertiary-container rounded-2xl flex items-center justify-center text-on-tertiary-container">
-                        <span class="material-symbols-outlined text-3xl">inventory</span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-primary mb-3">Wholesale Supply</h3>
-                        <p class="text-on-surface-variant leading-relaxed">Reliable, large-scale supply chains for restaurants, hotels, and retailers. Benefit from our sustainable sourcing and competitive wholesale pricing.</p>
-                    </div>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="flex flex-col md:flex-row gap-6 items-start">
+                  {% else %}
                     <div class="w-16 h-16 shrink-0 bg-surface-container-highest rounded-2xl flex items-center justify-center text-primary">
-                        <span class="material-symbols-outlined text-3xl">recycling</span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-primary mb-3">Composting Consultation</h3>
-                        <p class="text-on-surface-variant leading-relaxed">We help businesses set up efficient composting systems for our products, ensuring the loop is truly closed and your waste footprint is minimized.</p>
-                    </div>
+                {% endcase %}
+                    <span class="material-symbols-outlined text-3xl">{{ service.icon }}</span>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">{{ service.title }}</h3>
+                    <p class="text-on-surface-variant leading-relaxed">{{ service.description }}</p>
                 </div>
             </div>
+            {% endfor %}
         </div>
-    </main>
+    </div>
+</main>

@@ -4,54 +4,27 @@ title: Products | DineStar
 nav_active: products
 ---
 <main class="pt-32 pb-24">
-        <div class="max-w-7xl mx-auto px-6 md:px-12">
-            <header class="mb-16">
-                <h1 class="text-5xl font-extrabold text-primary mb-4 tracking-tight">Our Collection</h1>
-                <p class="text-lg text-on-surface-variant max-w-2xl">Explore our range of premium, sustainable palm leaf dinnerware designed for every occasion.</p>
-            </header>
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <header class="mb-16">
+            <h1 class="text-5xl font-extrabold text-primary mb-4 tracking-tight">Our Collection</h1>
+            <p class="text-lg text-on-surface-variant max-w-2xl">Explore our range of premium, sustainable palm leaf dinnerware designed for every occasion.</p>
+        </header>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Product 1 -->
-                <div class="bg-surface-container-low rounded-2xl overflow-hidden editorial-shadow group">
-                    <div class="aspect-square overflow-hidden">
-                        <img src="https://picsum.photos/seed/plate1/600/600" alt="Square Plate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2">Artisan Square Plate</h3>
-                        <p class="text-on-surface-variant text-sm mb-4">Perfect for main courses and elegant presentations.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-primary font-bold">$24.99 / pack</span>
-                        </div>
-                    </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for product in site.data.products %}
+            <div class="bg-surface-container-low rounded-2xl overflow-hidden editorial-shadow group">
+                <div class="aspect-square overflow-hidden">
+                    <img src="{{ product.image }}" alt="{{ product.name }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer">
                 </div>
-
-                <!-- Product 2 -->
-                <div class="bg-surface-container-low rounded-2xl overflow-hidden editorial-shadow group">
-                    <div class="aspect-square overflow-hidden">
-                        <img src="https://picsum.photos/seed/bowl1/600/600" alt="Round Bowl" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2">Deep Salad Bowl</h3>
-                        <p class="text-on-surface-variant text-sm mb-4">Ideal for salads, soups, and shared appetizers.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-primary font-bold">$19.99 / pack</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="bg-surface-container-low rounded-2xl overflow-hidden editorial-shadow group">
-                    <div class="aspect-square overflow-hidden">
-                        <img src="https://picsum.photos/seed/cutlery1/600/600" alt="Cutlery Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2">Wooden Cutlery Set</h3>
-                        <p class="text-on-surface-variant text-sm mb-4">Biodegradable birch wood forks, knives, and spoons.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-primary font-bold">$12.99 / pack</span>
-                        </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-primary mb-2">{{ product.name }}</h3>
+                    <p class="text-on-surface-variant text-sm mb-4">{{ product.description }}</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-primary font-bold">{{ product.price }}</span>
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-    </main>
+    </div>
+</main>
