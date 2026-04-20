@@ -37,15 +37,56 @@ function sendResultPage(res, status, payload) {
   res.send(`<!DOCTYPE html>
 <html>
 <body>
-<p>Authentication ${status}. You can close this window.</p>
+<p id="status">Authentication ${status}. You can close this window.</p>
 <script>
 (function () {
-  function receiveMessage(e) {
-    window.opener.postMessage(${JSON.stringify(message)}, e.origin);
-    window.removeEventListener("message", receiveMessage, false);
+  if (!window.opener) {
+    document.getElementById("status").textContent =
+      "Error: this page must be opened by Decap CMS as a popup.";
+    return;
   }
+
+  var MESSAGE = ${JSON.stringify(message)};
+  var sent = false;
+
+  function sendAuth(origin) {
+    if (sent) return;
+    sent = true;
+    try {
+      window.opener.postMessage(MESSAGE, origin);
+    } catch (e) {
+      console.error("postMessage failed:", e);
+    }
+    // Give Decap a moment to receive, then close the popup.
+    setTimeout(function () { window.close(); }, 1000);
+  }
+
+  function receiveMessage(e) {
+    // Decap echoes back "authorizing:github" once it's listening.
+    sendAuth(e.origin);
+  }
+
   window.addEventListener("message", receiveMessage, false);
-  window.opener.postMessage("authorizing:github", "*");
+
+  // Repeatedly announce ourselves until Decap responds (handles race).
+  var attempts = 0;
+  var poller = setInterval(function () {
+    if (sent || attempts >= 20) { clearInterval(poller); return; }
+    try {
+      window.opener.postMessage("authorizing:github", "*");
+    } catch (e) {
+      clearInterval(poller);
+    }
+    attempts++;
+  }, 250);
+
+  // Last-resort fallback: if Decap never echoed, send anyway after 5s.
+  setTimeout(function () {
+    if (!sent) {
+      console.warn("No handshake response from Decap; sending token with wildcard origin.");
+      sendAuth("*");
+    }
+  }, 5000);
 })();
 </script>
 </body>
