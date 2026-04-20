@@ -1,0 +1,26 @@
+tagline: Redefining dinnerware through the wisdom of nature. Premium palm leaf containers for a sustainable future.
+
+social:
+  - { icon: public, url: "#", label: Website }
+  - { icon: mail,   url: "#", label: Email }
+
+columns:
+  - heading: Company
+    links:
+      - { label: About Us, url: /about.html }
+      - { label: Sustainability Report, url: "#" }
+      - { label: Our Process, url: "#" }
+      - { label: Terms of Service, url: "#" }
+  - heading: Solutions
+    links:
+      - { label: Wholesale Inquiries, url: "#" }
+      - { label: Event Services, url: /services.html }
+      - { label: Brochure, url: /brochure.html }
+      - { label: Privacy Policy, url: /contact.html }
+
+copyright_owner: DineStar Sustainable Solutions
+copyright_suffix: Crafted with 100% natural palm leaves.
+
+badges:
+  - ISO 9001 CERTIFIED
+  - FDA APPROVED

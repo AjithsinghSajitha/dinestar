@@ -22,7 +22,7 @@ collections:
       - file: _data/home.yml
         name: home
         label: Home page
-        description: The hero section at the top of the home page.
+        description: All sections on the home page (hero, curated essentials, heritage, CTA).
         fields:
           - label: Hero section
             name: hero
@@ -36,6 +36,69 @@ collections:
               - { label: Secondary button label, name: secondary_button, widget: string }
               - { label: Hero image, name: image, widget: image }
               - { label: Hero image alt text, name: image_alt, widget: string }
+
+          - label: Curated Essentials section
+            name: curated_essentials
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: "View all" link label, name: view_all_label, widget: string }
+              - { label: "View all" link URL, name: view_all_url, widget: string, hint: "e.g. /products.html or # for none" }
+              - label: Featured card (large)
+                name: featured
+                widget: object
+                fields:
+                  - { label: Badge (e.g. Bestseller), name: badge, widget: string, required: false }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+                  - { label: Image, name: image, widget: image }
+              - label: Secondary card (wide)
+                name: secondary
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Image, name: image, widget: image }
+              - label: Small card (with image)
+                name: small
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Image, name: image, widget: image }
+              - label: Custom Orders card (icon, no image)
+                name: custom
+                widget: object
+                fields:
+                  - { label: Icon (Material Symbol), name: icon, widget: string, hint: "e.g. eco, star" }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+
+          - label: Heritage section
+            name: heritage
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+              - { label: Image, name: image, widget: image }
+              - { label: Image alt text, name: image_alt, widget: string }
+              - { label: Image badge text (corner overlay), name: badge, widget: string, required: false }
+              - label: Feature bullets
+                name: features
+                widget: list
+                field: { label: Feature, name: feature, widget: string }
+
+          - label: Call-to-action section
+            name: cta
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Primary button label, name: primary_button, widget: string }
+              - { label: Secondary button label, name: secondary_button, widget: string }
 
       - file: _data/products.yml
         name: products
@@ -74,6 +137,67 @@ collections:
                 options: [primary, secondary, tertiary, surface]
                 default: primary
 
+      - file: _data/about.yml
+        name: about
+        label: About page
+        description: "Our Story" and "Our Core Values" sections.
+        fields:
+          - label: Story section
+            name: story
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+              - { label: Image, name: image, widget: image }
+              - { label: Image alt text, name: image_alt, widget: string }
+              - { label: Stat number (e.g. "10+"), name: stat_number, widget: string }
+              - { label: Stat label, name: stat_label, widget: string }
+          - label: Values section
+            name: values
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - label: Value cards
+                name: items
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Icon (Material Symbol), name: icon, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+
+      - file: _data/contact.yml
+        name: contact
+        label: Contact page
+        description: Contact info and business hours (the form itself is fixed).
+        fields:
+          - { label: Heading, name: heading, widget: string }
+          - { label: Subheading, name: subheading, widget: text }
+          - label: Contact info items
+            name: info
+            widget: list
+            summary: "{{fields.label}} — {{fields.value}}"
+            fields:
+              - { label: Icon (Material Symbol), name: icon, widget: string, hint: "e.g. location_on, call, mail" }
+              - label: Color theme
+                name: color
+                widget: select
+                options: [primary, secondary, tertiary, surface]
+                default: primary
+              - { label: Label (e.g. "Phone Number"), name: label, widget: string }
+              - { label: Value (the actual address/number/email), name: value, widget: string }
+          - { label: Business hours heading, name: hours_heading, widget: string }
+          - label: Business hours
+            name: hours
+            widget: list
+            summary: "{{fields.day}}: {{fields.time}}"
+            fields:
+              - { label: Day(s), name: day, widget: string }
+              - { label: Time, name: time, widget: string }
+
       - file: _data/brochure.yml
         name: brochure
         label: Brochure page
@@ -90,3 +214,37 @@ collections:
           - { label: Download button label, name: download_label, widget: string, hint: "e.g. Download PDF (12.4 MB)" }
           - { label: Download URL (or upload a PDF), name: download_url, widget: file, required: false, media_library: { config: { multiple: false } } }
           - { label: Preview image, name: preview_image, widget: image }
+
+      - file: _data/footer.yml
+        name: footer
+        label: Footer
+        description: Tagline, social links, and link columns shown at the bottom of every page.
+        fields:
+          - { label: Tagline, name: tagline, widget: text }
+          - label: Social icon links
+            name: social
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { label: Icon (Material Symbol), name: icon, widget: string, hint: "e.g. public, mail, phone" }
+              - { label: URL, name: url, widget: string }
+              - { label: Accessible label, name: label, widget: string }
+          - label: Link columns
+            name: columns
+            widget: list
+            summary: "{{fields.heading}}"
+            fields:
+              - { label: Column heading, name: heading, widget: string }
+              - label: Links
+                name: links
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: URL, name: url, widget: string }
+          - { label: Copyright owner, name: copyright_owner, widget: string }
+          - { label: Copyright suffix line, name: copyright_suffix, widget: string }
+          - label: Certification badges
+            name: badges
+            widget: list
+            field: { label: Badge text, name: badge, widget: string }

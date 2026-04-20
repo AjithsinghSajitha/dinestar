@@ -4,144 +4,139 @@ title: DineStar | Sustainable Palm Leaf Dinnerware
 nav_active: home
 ---
 {% assign hero = site.data.home.hero %}
+{% assign curated = site.data.home.curated_essentials %}
+{% assign heritage = site.data.home.heritage %}
+{% assign cta = site.data.home.cta %}
+
 <!-- Hero Section -->
-    <header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-surface">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="z-10">
-                <span class="text-tertiary font-semibold tracking-widest text-sm uppercase mb-4 block">{{ hero.eyebrow }}</span>
-                <h1 class="text-6xl md:text-7xl font-extrabold text-primary leading-tight tracking-tighter mb-6">
-                    {{ hero.heading_line_1 }} <br> {{ hero.heading_line_2 }}
-                </h1>
-                <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-lg">
-                    {{ hero.description }}
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <button class="px-8 py-4 organic-gradient text-on-primary rounded-3xl font-bold text-lg hover:scale-105 transition-transform editorial-shadow">
-                        {{ hero.primary_button }}
-                    </button>
-                    <button class="px-8 py-4 bg-surface-container-lowest text-primary border border-outline-variant/20 rounded-3xl font-bold text-lg hover:bg-surface-container-low transition-colors">
-                        {{ hero.secondary_button }}
-                    </button>
-                </div>
-            </div>
-            <div class="relative group">
-                <div class="absolute -inset-4 bg-tertiary-container/10 rounded-full blur-3xl group-hover:bg-tertiary-container/20 transition-colors"></div>
-                <img alt="{{ hero.image_alt }}" class="relative rounded-2xl editorial-shadow w-full aspect-square object-cover transform rotate-2 hover:rotate-0 transition-transform duration-500" src="{{ hero.image | relative_url }}" referrerPolicy="no-referrer">
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-surface">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="z-10">
+            <span class="text-tertiary font-semibold tracking-widest text-sm uppercase mb-4 block">{{ hero.eyebrow }}</span>
+            <h1 class="text-6xl md:text-7xl font-extrabold text-primary leading-tight tracking-tighter mb-6">
+                {{ hero.heading_line_1 }} <br> {{ hero.heading_line_2 }}
+            </h1>
+            <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-lg">
+                {{ hero.description }}
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <button class="px-8 py-4 organic-gradient text-on-primary rounded-3xl font-bold text-lg hover:scale-105 transition-transform editorial-shadow">
+                    {{ hero.primary_button }}
+                </button>
+                <button class="px-8 py-4 bg-surface-container-lowest text-primary border border-outline-variant/20 rounded-3xl font-bold text-lg hover:bg-surface-container-low transition-colors">
+                    {{ hero.secondary_button }}
+                </button>
             </div>
         </div>
-    </header>
+        <div class="relative group">
+            <div class="absolute -inset-4 bg-tertiary-container/10 rounded-full blur-3xl group-hover:bg-tertiary-container/20 transition-colors"></div>
+            <img alt="{{ hero.image_alt }}" class="relative rounded-2xl editorial-shadow w-full aspect-square object-cover transform rotate-2 hover:rotate-0 transition-transform duration-500" src="{{ hero.image | relative_url }}" referrerPolicy="no-referrer">
+        </div>
+    </div>
+</header>
 
-    <!-- Curated Essentials Section -->
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6 md:px-12">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                <div class="max-w-2xl">
-                    <h2 class="text-primary/60 font-bold tracking-widest text-sm uppercase mb-2">The Collection</h2>
-                    <h3 class="text-4xl font-bold text-primary tracking-tight">Curated Essentials</h3>
-                </div>
-                <a class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">
-                    View All Products <span class="material-symbols-outlined">arrow_forward</span>
-                </a>
+<!-- Curated Essentials Section -->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-primary/60 font-bold tracking-widest text-sm uppercase mb-2">{{ curated.eyebrow }}</h2>
+                <h3 class="text-4xl font-bold text-primary tracking-tight">{{ curated.heading }}</h3>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-full md:h-[800px]">
-                <!-- Main Featured -->
-                <div class="md:col-span-2 md:row-span-2 bg-surface-container-low rounded-2xl overflow-hidden relative group cursor-pointer">
-                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Dinnerware Sets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXRm5EWDyFJhycRxa05qHk_2Uj4eKuQF6zAYY3WchOYHlz-X-akt09RbCshc3PNQyT7DTENuwprGLo6nI-aLQ7sSZf9AWNzBJyvs8Cz5C9myBzI28n3xxTTQVZYOcoU05aDn0XKadA9oSFiVBO0LlZqSrhEuIp5zOCYpqKonE6XJHA2sVHtuX5ChYbwkpiyyOig765WNBKj8yYI-r8O-qfIcvukOp8hGvS1OVhrFiZzv0CHK0a3F-wjT5qdXsumHBDAp0R754aSrVX" referrerPolicy="no-referrer">
-                    <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex flex-col justify-end p-8">
-                        <span class="text-on-primary-container bg-primary-container px-3 py-1 rounded-full text-xs font-bold w-fit mb-3">Bestseller</span>
-                        <h4 class="text-3xl font-bold text-white mb-2">Dinnerware Sets</h4>
-                        <p class="text-white/80 text-sm">Perfect for eco-conscious hosting and premium events.</p>
-                    </div>
+            <a class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="{{ curated.view_all_url | relative_url }}">
+                {{ curated.view_all_label }} <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-full md:h-[800px]">
+            <!-- Featured (large) -->
+            <div class="md:col-span-2 md:row-span-2 bg-surface-container-low rounded-2xl overflow-hidden relative group cursor-pointer">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="{{ curated.featured.title }}" src="{{ curated.featured.image | relative_url }}" referrerPolicy="no-referrer">
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex flex-col justify-end p-8">
+                    {% if curated.featured.badge and curated.featured.badge != "" %}
+                    <span class="text-on-primary-container bg-primary-container px-3 py-1 rounded-full text-xs font-bold w-fit mb-3">{{ curated.featured.badge }}</span>
+                    {% endif %}
+                    <h4 class="text-3xl font-bold text-white mb-2">{{ curated.featured.title }}</h4>
+                    <p class="text-white/80 text-sm">{{ curated.featured.description }}</p>
                 </div>
-                <!-- Secondary 1 -->
-                <div class="md:col-span-2 md:row-span-1 bg-surface-container-high rounded-2xl overflow-hidden relative group cursor-pointer">
-                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Artisan Bowls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMn7AyQeNXL-yurJ9sZvU3UqEGOqXJfP0xuZ_xvp7t85O9y4h3arfAVRKOQWyRFQ2FrJvOuFAA0Mj7jF2sBEkG8gjaeZR_A5evgBwELL-SrL709SZImxVMlAdf5lQCQyC9YyobDWQcTvoPMflPhLBgMZiTmfgctlt3wZpqSrrAPRj2aO82ahOdRmJwn2R2OWUtnjITkeF_XgYPVeUWyuO3fb_ZezvjVF4CCPR6pF9ZDUd0OT2y_ruCJ8PoD7vcqQ5xc4_imEvGkyet" referrerPolicy="no-referrer">
-                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors flex flex-col justify-end p-6">
-                        <h4 class="text-2xl font-bold text-white">Artisan Bowls</h4>
-                    </div>
+            </div>
+            <!-- Secondary (wide) -->
+            <div class="md:col-span-2 md:row-span-1 bg-surface-container-high rounded-2xl overflow-hidden relative group cursor-pointer">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="{{ curated.secondary.title }}" src="{{ curated.secondary.image | relative_url }}" referrerPolicy="no-referrer">
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors flex flex-col justify-end p-6">
+                    <h4 class="text-2xl font-bold text-white">{{ curated.secondary.title }}</h4>
                 </div>
-                <!-- Small 1 -->
-                <div class="md:col-span-1 md:row-span-1 bg-surface-container-highest rounded-2xl overflow-hidden relative group cursor-pointer">
-                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Natural Utensils" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIuiGaDabI9QcwjTySRoxIgPZRJgLJO3vrwsxSow8D5odrdUH2nVxXSPPVS5_Jvc-D8_QZ2fSdJ1esT1ITrUnym4UsDMctQwdndABKFpLW5fnwqkxOz29uMtf1r_wWu2ogRcdQ0EuwEAn4Z3tPbv-eW413Xc9meisaxve_LWJcravOkC4B3Z2fUC94_aI9ZLDRLytLwD4vWt78qSEw4zmLooNOl61HXebS2LkFpI_QT71ZMBDNBw_3C-lZgUWwXM9NjhxvW8hCajeR" referrerPolicy="no-referrer">
-                    <div class="absolute inset-0 flex flex-col justify-end p-6">
-                        <h4 class="text-xl font-bold text-primary">Natural Utensils</h4>
-                    </div>
+            </div>
+            <!-- Small (image card) -->
+            <div class="md:col-span-1 md:row-span-1 bg-surface-container-highest rounded-2xl overflow-hidden relative group cursor-pointer">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="{{ curated.small.title }}" src="{{ curated.small.image | relative_url }}" referrerPolicy="no-referrer">
+                <div class="absolute inset-0 flex flex-col justify-end p-6">
+                    <h4 class="text-xl font-bold text-primary">{{ curated.small.title }}</h4>
                 </div>
-                <!-- Small 2 -->
-                <div class="md:col-span-1 md:row-span-1 bg-secondary-container rounded-2xl flex flex-col justify-center items-center p-8 text-center group cursor-pointer hover:bg-secondary-container/80 transition-colors">
-                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                        <span class="material-symbols-outlined text-white text-3xl">eco</span>
-                    </div>
-                    <h4 class="text-lg font-bold text-primary mb-2">Custom Orders</h4>
-                    <p class="text-sm text-secondary">Wholesale solutions for your brand.</p>
+            </div>
+            <!-- Custom Orders (icon card, no image) -->
+            <div class="md:col-span-1 md:row-span-1 bg-secondary-container rounded-2xl flex flex-col justify-center items-center p-8 text-center group cursor-pointer hover:bg-secondary-container/80 transition-colors">
+                <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-white text-3xl">{{ curated.custom.icon }}</span>
                 </div>
+                <h4 class="text-lg font-bold text-primary mb-2">{{ curated.custom.title }}</h4>
+                <p class="text-sm text-secondary">{{ curated.custom.description }}</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Heritage Section -->
-    <section class="py-24 bg-surface-container-low relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-                <div class="md:col-span-5">
-                    <div class="relative">
-                        <img class="rounded-2xl editorial-shadow transform -rotate-3 w-full" alt="Palm Plantation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd5-EPeM73gZftd4jkoyZaT3wjae4thy_tvHlE0XvZ7_xjjQ5sREcbMu102_5sDO49-jUupW7PPcJzvRZMmv0kDMqXMOVFaZci7xdpEJ371-K5QQgXYSEx_HlSmZgKLjEt9SG39MnU4Ekm32lbFp9UqHSy-UW0rn1U8Hnu3jEbCkzV6grckPap5IcaYE2zjUFxo1wkVYm2cmkKyHdKG31nzYFb-8ZNirqkipebn2vwHKnJhn2OoEgGgkSrTOrFe0rh7QhWNZ-1wLch" referrerPolicy="no-referrer">
-                        <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-primary rounded-2xl hidden md:flex items-center justify-center p-6 text-on-primary text-center leading-tight font-bold editorial-shadow">
-                            100% Home Compostable
-                        </div>
+<!-- Heritage Section -->
+<section class="py-24 bg-surface-container-low relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-5">
+                <div class="relative">
+                    <img class="rounded-2xl editorial-shadow transform -rotate-3 w-full" alt="{{ heritage.image_alt }}" src="{{ heritage.image | relative_url }}" referrerPolicy="no-referrer">
+                    {% if heritage.badge and heritage.badge != "" %}
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-primary rounded-2xl hidden md:flex items-center justify-center p-6 text-on-primary text-center leading-tight font-bold editorial-shadow">
+                        {{ heritage.badge }}
                     </div>
+                    {% endif %}
                 </div>
-                <div class="md:col-span-6 md:col-start-7">
-                    <h2 class="text-primary/60 font-bold tracking-widest text-sm uppercase mb-4">Our Heritage</h2>
-                    <h3 class="text-5xl font-extrabold text-primary mb-8 tracking-tight">Born from the Earth</h3>
-                    <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
-                        <p>
-                            DineStar began with a simple observation: nature already creates the perfect container. We harvest naturally fallen leaves from the Areca palm, ensuring no trees are ever cut down.
-                        </p>
-                        <p>
-                            Each piece is sterilized and heat-pressed using pure steam. No chemicals, no glues, no toxins. Just the raw, textured beauty of the palm leaf, preserved for your table.
-                        </p>
-                        <ul class="grid grid-cols-2 gap-4 mt-8">
-                            <li class="flex items-center gap-3 text-primary font-semibold">
-                                <span class="material-symbols-outlined text-tertiary">check_circle</span> Zero Chemicals
-                            </li>
-                            <li class="flex items-center gap-3 text-primary font-semibold">
-                                <span class="material-symbols-outlined text-tertiary">check_circle</span> Microwavable
-                            </li>
-                            <li class="flex items-center gap-3 text-primary font-semibold">
-                                <span class="material-symbols-outlined text-tertiary">check_circle</span> Water Resistant
-                            </li>
-                            <li class="flex items-center gap-3 text-primary font-semibold">
-                                <span class="material-symbols-outlined text-tertiary">check_circle</span> Oven Safe
-                            </li>
-                            <li class="flex items-center gap-3 text-primary font-semibold">
-                                <span class="material-symbols-outlined text-tertiary">check_circle</span> Refrigerator safe
-                            </li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="md:col-span-6 md:col-start-7">
+                <h2 class="text-primary/60 font-bold tracking-widest text-sm uppercase mb-4">{{ heritage.eyebrow }}</h2>
+                <h3 class="text-5xl font-extrabold text-primary mb-8 tracking-tight">{{ heritage.heading }}</h3>
+                <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+                    {% for p in heritage.paragraphs %}
+                    <p>{{ p }}</p>
+                    {% endfor %}
+                    <ul class="grid grid-cols-2 gap-4 mt-8">
+                        {% for feature in heritage.features %}
+                        <li class="flex items-center gap-3 text-primary font-semibold">
+                            <span class="material-symbols-outlined text-tertiary">check_circle</span> {{ feature }}
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- CTA Section -->
-    <section class="py-24 bg-white overflow-hidden">
-        <div class="max-w-5xl mx-auto px-6 md:px-12">
-            <div class="bg-primary rounded-[2rem] p-12 md:p-20 relative overflow-hidden flex flex-col items-center text-center">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl -mr-20 -mt-20"></div>
-                <div class="absolute bottom-0 left-0 w-64 h-64 bg-tertiary/20 rounded-full blur-3xl -ml-20 -mb-20"></div>
-                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 relative z-10">Ready to Elevate Your Table?</h2>
-                <p class="text-on-primary-container text-lg mb-10 max-w-2xl relative z-10 leading-relaxed">
-                    Join the sustainable luxury movement. Whether it's an intimate dinner or a grand event, DineStar provides the organic touch your guests will remember.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 relative z-10">
-                    <button class="px-10 py-4 bg-surface text-primary rounded-xl font-bold text-lg hover:bg-surface-bright transition-colors editorial-shadow">
-                        Shop Now
-                    </button>
-                    <button class="px-10 py-4 border-2 border-on-primary-container text-on-primary-container rounded-xl font-bold text-lg hover:bg-white/10 transition-colors">
-                        Request Sample Kit
-                    </button>
-                </div>
+<!-- CTA Section -->
+<section class="py-24 bg-white overflow-hidden">
+    <div class="max-w-5xl mx-auto px-6 md:px-12">
+        <div class="bg-primary rounded-[2rem] p-12 md:p-20 relative overflow-hidden flex flex-col items-center text-center">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl -mr-20 -mt-20"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-tertiary/20 rounded-full blur-3xl -ml-20 -mb-20"></div>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 relative z-10">{{ cta.heading }}</h2>
+            <p class="text-on-primary-container text-lg mb-10 max-w-2xl relative z-10 leading-relaxed">
+                {{ cta.description }}
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 relative z-10">
+                <button class="px-10 py-4 bg-surface text-primary rounded-xl font-bold text-lg hover:bg-surface-bright transition-colors editorial-shadow">
+                    {{ cta.primary_button }}
+                </button>
+                <button class="px-10 py-4 border-2 border-on-primary-container text-on-primary-container rounded-xl font-bold text-lg hover:bg-white/10 transition-colors">
+                    {{ cta.secondary_button }}
+                </button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
