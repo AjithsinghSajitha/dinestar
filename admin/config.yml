@@ -140,7 +140,7 @@ collections:
       - file: _data/about.yml
         name: about
         label: About page
-        description: "Our Story" and "Our Core Values" sections.
+        description: Our Story and Our Core Values sections.
         fields:
           - label: Story section
             name: story
