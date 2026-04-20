@@ -13,12 +13,6 @@ nav:
 
 exclude:
   - README.md
-  - package.json
-  - package-lock.json
-  - vite.config.ts
-  - tsconfig.json
-  - metadata.json
-  - node_modules
   - .claude
   - .env*
   - Gemfile
