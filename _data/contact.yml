@@ -1,0 +1,22 @@
+heading: Get in Touch
+subheading: Have questions about our products or services? We're here to help you transition to a more sustainable table.
+
+info:
+  - icon: location_on
+    color: primary
+    label: Our Headquarters
+    value: 123 Palm Grove Ave, Eco City, EC 45678
+  - icon: call
+    color: secondary
+    label: Phone Number
+    value: +1 (555) 123-4567
+  - icon: mail
+    color: tertiary
+    label: Email Address
+    value: hello@dinestar.com
+
+hours_heading: Business Hours
+hours:
+  - { day: Monday - Friday, time: 9:00 AM - 6:00 PM }
+  - { day: Saturday,        time: 10:00 AM - 4:00 PM }
+  - { day: Sunday,          time: Closed }

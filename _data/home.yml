@@ -7,3 +7,46 @@ hero:
   secondary_button: Our Story
   image: https://lh3.googleusercontent.com/aida-public/AB6AXuD69Gb7P0TzxuD7TSPcYkigNZC8qKPITHmfFobZvUEXKdsj0K4-pTKZY0N2U58amAiFVg_axQZX9cDriyBkFx5cw517Po9zhwt3TQy8-cPrB4gtnAoMnWWfISe5bEh1UdyroqXn0Exkr4BMp-nf67W6xktsAm1Sb13I4P1yj3jIELIV13ymHX6ylBngK7TcMeT38NsEALwQh3pGfjYg-ERuoDtd5Ko9BAdc014W9UhTFE38tQVpbNcpSKnVV7gm5FAD9mVAor6qRg58
   image_alt: Palm Leaf Dinnerware
+
+curated_essentials:
+  eyebrow: The Collection
+  heading: Curated Essentials
+  view_all_label: View All Products
+  view_all_url: /products.html
+  featured:
+    badge: Bestseller
+    title: Dinnerware Sets
+    description: Perfect for eco-conscious hosting and premium events.
+    image: https://lh3.googleusercontent.com/aida-public/AB6AXuBXRm5EWDyFJhycRxa05qHk_2Uj4eKuQF6zAYY3WchOYHlz-X-akt09RbCshc3PNQyT7DTENuwprGLo6nI-aLQ7sSZf9AWNzBJyvs8Cz5C9myBzI28n3xxTTQVZYOcoU05aDn0XKadA9oSFiVBO0LlZqSrhEuIp5zOCYpqKonE6XJHA2sVHtuX5ChYbwkpiyyOig765WNBKj8yYI-r8O-qfIcvukOp8hGvS1OVhrFiZzv0CHK0a3F-wjT5qdXsumHBDAp0R754aSrVX
+  secondary:
+    title: Artisan Bowls
+    image: https://lh3.googleusercontent.com/aida-public/AB6AXuDMn7AyQeNXL-yurJ9sZvU3UqEGOqXJfP0xuZ_xvp7t85O9y4h3arfAVRKOQWyRFQ2FrJvOuFAA0Mj7jF2sBEkG8gjaeZR_A5evgBwELL-SrL709SZImxVMlAdf5lQCQyC9YyobDWQcTvoPMflPhLBgMZiTmfgctlt3wZpqSrrAPRj2aO82ahOdRmJwn2R2OWUtnjITkeF_XgYPVeUWyuO3fb_ZezvjVF4CCPR6pF9ZDUd0OT2y_ruCJ8PoD7vcqQ5xc4_imEvGkyet
+  small:
+    title: Natural Utensils
+    image: https://lh3.googleusercontent.com/aida-public/AB6AXuCIuiGaDabI9QcwjTySRoxIgPZRJgLJO3vrwsxSow8D5odrdUH2nVxXSPPVS5_Jvc-D8_QZ2fSdJ1esT1ITrUnym4UsDMctQwdndABKFpLW5fnwqkxOz29uMtf1r_wWu2ogRcdQ0EuwEAn4Z3tPbv-eW413Xc9meisaxve_LWJcravOkC4B3Z2fUC94_aI9ZLDRLytLwD4vWt78qSEw4zmLooNOl61HXebS2LkFpI_QT71ZMBDNBw_3C-lZgUWwXM9NjhxvW8hCajeR
+  custom:
+    icon: eco
+    title: Custom Orders
+    description: Wholesale solutions for your brand.
+
+heritage:
+  eyebrow: Our Heritage
+  heading: Born from the Earth
+  paragraphs:
+    - "DineStar began with a simple observation: nature already creates the perfect container. We harvest naturally fallen leaves from the Areca palm, ensuring no trees are ever cut down."
+    - Each piece is sterilized and heat-pressed using pure steam. No chemicals, no glues, no toxins. Just the raw, textured beauty of the palm leaf, preserved for your table.
+  image: https://lh3.googleusercontent.com/aida-public/AB6AXuCd5-EPeM73gZftd4jkoyZaT3wjae4thy_tvHlE0XvZ7_xjjQ5sREcbMu102_5sDO49-jUupW7PPcJzvRZMmv0kDMqXMOVFaZci7xdpEJ371-K5QQgXYSEx_HlSmZgKLjEt9SG39MnU4Ekm32lbFp9UqHSy-UW0rn1U8Hnu3jEbCkzV6grckPap5IcaYE2zjUFxo1wkVYm2cmkKyHdKG31nzYFb-8ZNirqkipebn2vwHKnJhn2OoEgGgkSrTOrFe0rh7QhWNZ-1wLch
+  image_alt: Palm Plantation
+  badge: 100% Home Compostable
+  features:
+    - Zero Chemicals
+    - Microwavable
+    - Water Resistant
+    - Oven Safe
+    - Refrigerator safe
+
+cta:
+  heading: Ready to Elevate Your Table?
+  description: Join the sustainable luxury movement. Whether it's an intimate dinner or a grand event, DineStar provides the organic touch your guests will remember.
+  primary_button: Shop Now
+  secondary_button: Request Sample Kit

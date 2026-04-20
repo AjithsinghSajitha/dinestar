@@ -1,0 +1,22 @@
+story:
+  heading: Our Story
+  paragraphs:
+    - DineStar was founded on the belief that luxury and sustainability are not mutually exclusive. Our journey began in the lush palm groves of South Asia, where we discovered the incredible potential of the naturally fallen Areca palm leaf.
+    - Today, we are a global leader in sustainable dinnerware, committed to ethical sourcing, zero-waste manufacturing, and providing our customers with products that are as beautiful as they are kind to the planet.
+  image: https://picsum.photos/seed/about1/800/600
+  image_alt: Our Team
+  stat_number: "10+"
+  stat_label: Years of Innovation
+
+values:
+  heading: Our Core Values
+  items:
+    - icon: eco
+      title: Sustainability
+      description: Every decision we make is guided by its impact on the environment.
+    - icon: diamond
+      title: Quality
+      description: We never compromise on the premium feel and durability of our products.
+    - icon: groups
+      title: Community
+      description: We support the local communities that harvest and craft our materials.
