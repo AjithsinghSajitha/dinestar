@@ -1,19 +1,20 @@
-- title: Event Catering Solutions
-  description: We provide bulk dinnerware and customized setups for weddings, corporate events, and festivals. Our team ensures your event is both beautiful and waste-free.
-  icon: event
-  color: primary
+items:
+  - title: Event Catering Solutions
+    description: We provide bulk dinnerware and customized setups for weddings, corporate events, and festivals. Our team ensures your event is both beautiful and waste-free.
+    icon: event
+    color: primary
 
-- title: Custom Branding
-  description: Elevate your brand with custom-stamped palm leaf products. We can laser-etch or heat-press your logo onto our plates and bowls for a unique, organic branding experience.
-  icon: branding_watermark
-  color: secondary
+  - title: Custom Branding
+    description: Elevate your brand with custom-stamped palm leaf products. We can laser-etch or heat-press your logo onto our plates and bowls for a unique, organic branding experience.
+    icon: branding_watermark
+    color: secondary
 
-- title: Wholesale Supply
-  description: Reliable, large-scale supply chains for restaurants, hotels, and retailers. Benefit from our sustainable sourcing and competitive wholesale pricing.
-  icon: inventory
-  color: tertiary
+  - title: Wholesale Supply
+    description: Reliable, large-scale supply chains for restaurants, hotels, and retailers. Benefit from our sustainable sourcing and competitive wholesale pricing.
+    icon: inventory
+    color: tertiary
 
-- title: Composting Consultation
-  description: We help businesses set up efficient composting systems for our products, ensuring the loop is truly closed and your waste footprint is minimized.
-  icon: recycling
-  color: surface
+  - title: Composting Consultation
+    description: We help businesses set up efficient composting systems for our products, ensuring the loop is truly closed and your waste footprint is minimized.
+    icon: recycling
+    color: surface

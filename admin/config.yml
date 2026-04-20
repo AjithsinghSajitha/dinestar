@@ -1,0 +1,92 @@
+backend:
+  name: github
+  repo: AjithsinghSajitha/dinestar
+  branch: main
+  base_url: https://dinestar.vercel.app
+  auth_endpoint: /api/auth
+
+publish_mode: editorial_workflow
+
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
+
+site_url: https://ajithsinghsajitha.github.io/dinestar/
+display_url: https://ajithsinghsajitha.github.io/dinestar/
+logo_url: https://ajithsinghsajitha.github.io/dinestar/assets/images/ds-logo.svg
+
+collections:
+  - name: site_content
+    label: Site content
+    description: Edit the text and images on each page.
+    files:
+      - file: _data/home.yml
+        name: home
+        label: Home page
+        description: The hero section at the top of the home page.
+        fields:
+          - label: Hero section
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow text (small label above heading), name: eyebrow, widget: string }
+              - { label: Heading line 1, name: heading_line_1, widget: string }
+              - { label: Heading line 2, name: heading_line_2, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Primary button label, name: primary_button, widget: string }
+              - { label: Secondary button label, name: secondary_button, widget: string }
+              - { label: Hero image, name: image, widget: image }
+              - { label: Hero image alt text, name: image_alt, widget: string }
+
+      - file: _data/products.yml
+        name: products
+        label: Products
+        description: Cards shown on the Products page. Add, remove, or reorder them.
+        fields:
+          - label: Products
+            name: items
+            widget: list
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Price, name: price, widget: string, hint: "e.g. $24.99 / pack" }
+              - { label: Image, name: image, widget: image }
+
+      - file: _data/services.yml
+        name: services
+        label: Services
+        description: Service items on the Our Services page.
+        fields:
+          - label: Services
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - label: Icon name (Material Symbols)
+                name: icon
+                widget: string
+                hint: "e.g. event, recycling, branding_watermark — see fonts.google.com/icons"
+              - label: Color theme
+                name: color
+                widget: select
+                options: [primary, secondary, tertiary, surface]
+                default: primary
+
+      - file: _data/brochure.yml
+        name: brochure
+        label: Brochure page
+        description: Content on the Brochure download page.
+        fields:
+          - { label: Page heading, name: heading, widget: string }
+          - { label: Page subheading, name: subheading, widget: text }
+          - { label: Collection title, name: collection_title, widget: string }
+          - { label: Collection description, name: collection_description, widget: text }
+          - label: Feature bullets
+            name: features
+            widget: list
+            field: { label: Feature, name: feature, widget: string }
+          - { label: Download button label, name: download_label, widget: string, hint: "e.g. Download PDF (12.4 MB)" }
+          - { label: Download URL (or upload a PDF), name: download_url, widget: file, required: false, media_library: { config: { multiple: false } } }
+          - { label: Preview image, name: preview_image, widget: image }
