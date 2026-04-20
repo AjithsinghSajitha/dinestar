@@ -1,0 +1,26 @@
+title: DineStar
+description: Sustainable Palm Leaf Dinnerware - Nature's Craft for Your Table.
+url: https://ajithsinghsajitha.github.io
+baseurl: /dinestar
+
+nav:
+  - { title: Home,         url: /index.html,    slug: home }
+  - { title: Products,     url: /products.html, slug: products }
+  - { title: Our Services, url: /services.html, slug: services }
+  - { title: About Us,     url: /about.html,    slug: about }
+  - { title: Brochure,     url: /brochure.html, slug: brochure }
+  - { title: Contact Us,   url: /contact.html,  slug: contact }
+
+exclude:
+  - README.md
+  - package.json
+  - package-lock.json
+  - vite.config.ts
+  - tsconfig.json
+  - metadata.json
+  - node_modules
+  - .claude
+  - .env*
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -6,3 +6,11 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
+Gemfile.lock
