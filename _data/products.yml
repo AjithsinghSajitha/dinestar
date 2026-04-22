@@ -11,3 +11,9 @@ items:
     description: Biodegradable birch wood forks, knives, and spoons.
     price: $12.99 / pack
     image: https://picsum.photos/seed/cutlery1/600/600
+  - name: Plates 10'
+    description: |-
+      round 
+      brown
+    price: $12.99
+    image: /assets/images/uploads/ds-logo-2.png
