@@ -3,10 +3,10 @@ items:
     description: Round Deep plate
     price: Rs. 5 / pc
     image: /assets/images/uploads/6-round-deep-plate.png
-  - name: Deep Salad Bowl AAA
-    description: Ideal for salads, soups, and shared appetizers.
-    price: $19.99 / pack
-    image: https://picsum.photos/seed/bowl1/600/600
+  - name: 4''
+    description: Square Deep Bowl
+    price: Rs 3 / pc
+    image: /assets/images/uploads/4-square-deep-bowl.png
   - name: Wooden Cutlery Set
     description: Biodegradable birch wood forks, knives, and spoons.
     price: $12.99 / pack
