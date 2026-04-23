@@ -11,9 +11,7 @@ items:
     description: "Deep Round Plate "
     price: Rs 3 / pc
     image: /assets/images/uploads/8-deep-round-plate.png
-  - name: Plates 10'
-    description: |-
-      round 
-      brown
-    price: $12.99
-    image: /assets/images/uploads/ds-logo-2.png
+  - name: 12''
+    description: Deep round Plate
+    price: Rs 3/pc
+    image: /assets/images/uploads/12-deep-round-plate.png
