@@ -7,10 +7,10 @@ items:
     description: Square Deep Bowl
     price: Rs 3 / pc
     image: /assets/images/uploads/4-square-deep-bowl.png
-  - name: Wooden Cutlery Set
-    description: Biodegradable birch wood forks, knives, and spoons.
-    price: $12.99 / pack
-    image: https://picsum.photos/seed/cutlery1/600/600
+  - name: 8''
+    description: "Deep Round Plate "
+    price: Rs 3 / pc
+    image: /assets/images/uploads/8-deep-round-plate.png
   - name: Plates 10'
     description: |-
       round 
