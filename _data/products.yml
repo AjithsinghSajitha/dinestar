@@ -19,3 +19,7 @@ items:
     description: "Square Plate "
     price: Rs 3/pc
     image: /assets/images/uploads/6-sqaure-plate.png
+  - name: 9''
+    description: "3C Square Deep Plate "
+    price: Rs 3/pc
+    image: /assets/images/uploads/9-square-3c-deep-plate.png
