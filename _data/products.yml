@@ -23,3 +23,7 @@ items:
     description: "3C Square Deep Plate "
     price: Rs 3/pc
     image: /assets/images/uploads/9-square-3c-deep-plate.png
+  - name: "9'' x 6'' "
+    description: Rectangular Tray
+    price: "Rs 3/pc "
+    image: /assets/images/uploads/9-x-6-rectangular-tray.png
