@@ -3,10 +3,6 @@ items:
     description: Round Deep plate
     price: Rs. 5 / pc
     image: /assets/images/uploads/6-round-deep-plate.png
-  - name: 4''
-    description: Square Deep Bowl
-    price: Rs 3 / pc
-    image: /assets/images/uploads/4-square-deep-bowl.png
   - name: 8''
     description: "Deep Round Plate "
     price: Rs 3 / pc
@@ -15,6 +11,14 @@ items:
     description: Deep round Plate
     price: Rs 3/pc
     image: /assets/images/uploads/12-deep-round-plate.png
+  - name: 3.5''
+    description: Round Bowl
+    price: Rs 2/pc
+    image: /assets/images/uploads/3.5-round-bowl.png
+  - name: 4''
+    description: Square Deep Bowl
+    price: Rs 3 / pc
+    image: /assets/images/uploads/4-square-deep-bowl.png
   - name: 6''
     description: "Square Plate "
     price: Rs 3/pc
@@ -31,7 +35,3 @@ items:
     description: Square Deep Bowl
     price: Rs 3/pc
     image: /assets/images/uploads/5-square-deep-bowl.png
-  - name: 3.5''
-    description: Round Bowl
-    price: Rs 2/pc
-    image: /assets/images/uploads/3.5-round-bowl.png
