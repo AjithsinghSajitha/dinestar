@@ -35,3 +35,7 @@ items:
     description: Square Deep Bowl
     price: Rs 3/pc
     image: /assets/images/uploads/5-square-deep-bowl.png
+  - name: "1000 ml "
+    description: "Box Container with Plastic lid "
+    price: Rs. 5 / pc
+    image: /assets/images/uploads/1000-ml-box-container-with-plastic-lid.png
