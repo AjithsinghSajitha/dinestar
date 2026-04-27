@@ -27,3 +27,7 @@ items:
     description: Rectangular Tray
     price: Rs 3/pc
     image: /assets/images/uploads/9-x-6-rectangular-tray.png
+  - name: 5''
+    description: Square Deep Bowl
+    price: Rs 3/pc
+    image: /assets/images/uploads/5-square-deep-bowl.png
