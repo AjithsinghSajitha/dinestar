@@ -31,3 +31,7 @@ items:
     description: Square Deep Bowl
     price: Rs 3/pc
     image: /assets/images/uploads/5-square-deep-bowl.png
+  - name: 3.5''
+    description: Round Bowl
+    price: Rs 2/pc
+    image: /assets/images/uploads/3.5-round-bowl.png
