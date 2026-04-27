@@ -39,3 +39,7 @@ items:
     description: "Box Container with Plastic lid "
     price: Rs. 5 / pc
     image: /assets/images/uploads/1000-ml-box-container-with-plastic-lid.png
+  - name: 500 ml
+    description: "Container Box with Plastic Lid "
+    price: Rs 4/ pc
+    image: /assets/images/uploads/500-ml-box-container-with-plastic-lid.png
