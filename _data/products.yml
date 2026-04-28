@@ -47,3 +47,7 @@ items:
     description: "Box Container with Plastic Lid "
     price: Rs 4/pc
     image: /assets/images/uploads/750-ml-container-box-with-plastic-lid.png
+  - name: 12''
+    description: "4C Round Deep Plate "
+    price: Rs 5/pc
+    image: /assets/images/uploads/12-4c-round-deep-plate.png
