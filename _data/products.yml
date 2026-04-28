@@ -51,3 +51,7 @@ items:
     description: "4C Round Deep Plate "
     price: Rs 5/pc
     image: /assets/images/uploads/12-4c-round-deep-plate.png
+  - name: 10''
+    description: "Round Deep Plate "
+    price: Rs 3/pc
+    image: /assets/images/uploads/10-round-deep-plate.png
