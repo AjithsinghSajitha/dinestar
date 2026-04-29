@@ -55,3 +55,7 @@ items:
     description: "Round Deep Plate "
     price: Rs 3/pc
     image: /assets/images/uploads/10-round-deep-plate.png
+  - name: 8''
+    description: "Square Plate "
+    price: Rs 2 /pc
+    image: /assets/images/uploads/8-square-plate.png
