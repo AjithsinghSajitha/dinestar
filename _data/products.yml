@@ -59,3 +59,7 @@ items:
     description: "Square Plate "
     price: Rs 2 /pc
     image: /assets/images/uploads/8-square-plate.png
+  - name: 165 mm
+    description: Wooden Forks
+    price: Rs 1/pc
+    image: /assets/images/uploads/165-mm-wooden-forks.png
