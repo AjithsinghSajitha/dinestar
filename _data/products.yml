@@ -63,3 +63,7 @@ items:
     description: Wooden Forks
     price: Rs 1/pc
     image: /assets/images/uploads/165-mm-wooden-forks.png
+  - name: 165 mm
+    description: Wooden Spoons
+    price: Rs 1 /pc
+    image: /assets/images/uploads/165mm-wooden-spoon.png
