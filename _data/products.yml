@@ -7,10 +7,18 @@ items:
     description: "Deep Round Plate "
     price: Rs 3 / pc
     image: /assets/images/uploads/chatgpt-image-apr-30-2026-01_29_31-am.png
+  - name: 10''
+    description: "Round Deep Plate "
+    price: Rs 3/pc
+    image: /assets/images/uploads/10-round-deep-plate.png
   - name: 12''
     description: Deep round Plate
     price: Rs 3/pc
     image: /assets/images/uploads/12-deep-round-plate.png
+  - name: 12''
+    description: "4C Round Deep Plate "
+    price: Rs 5/pc
+    image: /assets/images/uploads/12-4c-round-deep-plate.png
   - name: 3.5''
     description: Round Bowl
     price: Rs 2/pc
@@ -19,10 +27,18 @@ items:
     description: Square Deep Bowl
     price: Rs 3 / pc
     image: /assets/images/uploads/4-square-deep-bowl.png
+  - name: 5''
+    description: Square Deep Bowl
+    price: Rs 3/pc
+    image: /assets/images/uploads/5-square-deep-bowl.png
   - name: 6''
     description: "Square Plate "
     price: Rs 3/pc
     image: /assets/images/uploads/6-sqaure-plate.png
+  - name: 8''
+    description: "Square Plate "
+    price: Rs 2 /pc
+    image: /assets/images/uploads/8-square-plate.png
   - name: 9''
     description: "3C Square Deep Plate "
     price: Rs 3/pc
@@ -31,14 +47,6 @@ items:
     description: Rectangular Tray
     price: Rs 3/pc
     image: /assets/images/uploads/9-x-6-rectangular-tray.png
-  - name: 5''
-    description: Square Deep Bowl
-    price: Rs 3/pc
-    image: /assets/images/uploads/5-square-deep-bowl.png
-  - name: "1000 ml "
-    description: "Box Container with Plastic lid "
-    price: Rs. 5 / pc
-    image: /assets/images/uploads/1000-ml-box-container-with-plastic-lid.png
   - name: 500 ml
     description: "Container Box with Plastic Lid "
     price: Rs 4/ pc
@@ -47,18 +55,10 @@ items:
     description: "Box Container with Plastic Lid "
     price: Rs 4/pc
     image: /assets/images/uploads/750-ml-container-box-with-plastic-lid.png
-  - name: 12''
-    description: "4C Round Deep Plate "
-    price: Rs 5/pc
-    image: /assets/images/uploads/12-4c-round-deep-plate.png
-  - name: 10''
-    description: "Round Deep Plate "
-    price: Rs 3/pc
-    image: /assets/images/uploads/10-round-deep-plate.png
-  - name: 8''
-    description: "Square Plate "
-    price: Rs 2 /pc
-    image: /assets/images/uploads/8-square-plate.png
+  - name: "1000 ml "
+    description: "Box Container with Plastic lid "
+    price: Rs. 5 / pc
+    image: /assets/images/uploads/1000-ml-box-container-with-plastic-lid.png
   - name: 165 mm
     description: Wooden Forks
     price: Rs 1/pc
