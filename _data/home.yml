@@ -2,12 +2,12 @@ hero:
   eyebrow: Sustainable Luxury
   heading_line_1: Nature's Craft
   heading_line_2: for Your Table
-  description: Exquisite dinnerware hand-pressed from naturally fallen Areca palm leaves. Sustainable luxury that breathes life into every meal.
-  primary_button: Explore Collection
+  description: Exquisite dinnerware hand-pressed from naturally fallen Areca palm
+    leaves. Sustainable luxury that breathes life into every meal.
+  primary_button: "Explore Collection "
   secondary_button: Our Story
   image: https://lh3.googleusercontent.com/aida-public/AB6AXuD69Gb7P0TzxuD7TSPcYkigNZC8qKPITHmfFobZvUEXKdsj0K4-pTKZY0N2U58amAiFVg_axQZX9cDriyBkFx5cw517Po9zhwt3TQy8-cPrB4gtnAoMnWWfISe5bEh1UdyroqXn0Exkr4BMp-nf67W6xktsAm1Sb13I4P1yj3jIELIV13ymHX6ylBngK7TcMeT38NsEALwQh3pGfjYg-ERuoDtd5Ko9BAdc014W9UhTFE38tQVpbNcpSKnVV7gm5FAD9mVAor6qRg58
   image_alt: Palm Leaf Dinnerware
-
 curated_essentials:
   eyebrow: The Collection
   heading: Curated Essentials
@@ -28,13 +28,16 @@ curated_essentials:
     icon: eco
     title: Custom Orders
     description: Wholesale solutions for your brand.
-
 heritage:
   eyebrow: Our Heritage
   heading: Born from the Earth
   paragraphs:
-    - "DineStar began with a simple observation: nature already creates the perfect container. We harvest naturally fallen leaves from the Areca palm, ensuring no trees are ever cut down."
-    - Each piece is sterilized and heat-pressed using pure steam. No chemicals, no glues, no toxins. Just the raw, textured beauty of the palm leaf, preserved for your table.
+    - "DineStar began with a simple observation: nature already creates the
+      perfect container. We harvest naturally fallen leaves from the Areca palm,
+      ensuring no trees are ever cut down."
+    - Each piece is sterilized and heat-pressed using pure steam. No chemicals,
+      no glues, no toxins. Just the raw, textured beauty of the palm leaf,
+      preserved for your table.
   image: https://lh3.googleusercontent.com/aida-public/AB6AXuCd5-EPeM73gZftd4jkoyZaT3wjae4thy_tvHlE0XvZ7_xjjQ5sREcbMu102_5sDO49-jUupW7PPcJzvRZMmv0kDMqXMOVFaZci7xdpEJ371-K5QQgXYSEx_HlSmZgKLjEt9SG39MnU4Ekm32lbFp9UqHSy-UW0rn1U8Hnu3jEbCkzV6grckPap5IcaYE2zjUFxo1wkVYm2cmkKyHdKG31nzYFb-8ZNirqkipebn2vwHKnJhn2OoEgGgkSrTOrFe0rh7QhWNZ-1wLch
   image_alt: Palm Plantation
   badge: 100% Home Compostable
@@ -44,9 +47,10 @@ heritage:
     - Water Resistant
     - Oven Safe
     - Refrigerator safe
-
 cta:
   heading: Ready to Elevate Your Table?
-  description: Join the sustainable luxury movement. Whether it's an intimate dinner or a grand event, DineStar provides the organic touch your guests will remember.
+  description: Join the sustainable luxury movement. Whether it's an intimate
+    dinner or a grand event, DineStar provides the organic touch your guests
+    will remember.
   primary_button: Shop Now
   secondary_button: Request Sample Kit
