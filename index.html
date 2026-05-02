@@ -20,9 +20,9 @@ nav_active: home
                 {{ hero.description }}
             </p>
             <div class="flex flex-wrap gap-4">
-                <button class="px-8 py-4 organic-gradient text-on-primary rounded-3xl font-bold text-lg hover:scale-105 transition-transform editorial-shadow">
+                <a href="{{ curated.view_all_url | relative_url }}" class="px-8 py-4 organic-gradient text-on-primary rounded-3xl font-bold text-lg hover:scale-105 transition-transform editorial-shadow">
                     {{ hero.primary_button }}
-                </button>
+                </a>
                 <button class="px-8 py-4 bg-surface-container-lowest text-primary border border-outline-variant/20 rounded-3xl font-bold text-lg hover:bg-surface-container-low transition-colors">
                     {{ hero.secondary_button }}
                 </button>
