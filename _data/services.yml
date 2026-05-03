@@ -19,3 +19,8 @@ items:
     description: International bulk supply, Documentation support, Packaging & logistics
     icon: recycling
     color: surface
+  - color: primary
+    title: Bulk Supply & Wholesale
+    description: Supply  to Restaurants, Caterers, Retailers, Distributors, and
+      Tiered pricing (B2B focus)
+    icon: Event
