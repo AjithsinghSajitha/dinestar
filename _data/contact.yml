@@ -11,7 +11,6 @@ form:
     - General Inquiry
     - Wholesale Request
     - Event Catering
-    - Custom Branding
   message_label: Message
   message_placeholder: How can we help you?
   submit_label: Send Message
