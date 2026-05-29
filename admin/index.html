@@ -24,8 +24,9 @@
             background-color: var(--ds-surface) !important;
         }
 
-        /* Collection cards in the grid view */
-        [class*="ListCard"] {
+        /* Collection cards — list view (ListCard) and grid/tile view (GridCard) */
+        [class*="ListCard"],
+        [class*="GridCard"] {
             position: relative !important;
             border-radius: 14px !important;
             border: 1px solid var(--ds-border) !important;
@@ -34,19 +35,33 @@
             transition: transform 0.15s ease, box-shadow 0.15s ease !important;
             overflow: hidden !important;
         }
-        [class*="ListCard"]:hover {
+        [class*="ListCard"]:hover,
+        [class*="GridCard"]:hover {
             transform: translateY(-3px) !important;
             box-shadow: 0 12px 26px rgba(11, 66, 17, 0.16) !important;
         }
 
-        /* Card title + a leading icon chip */
-        [class*="ListCardTitle"] {
+        /* Grid cards have no top-level image, so collapse the empty image band
+           and let the card shrink to its content */
+        [class*="GridCard"] {
+            height: auto !important;
+            min-height: 0 !important;
+        }
+        [class*="StyledImage"],
+        [class*="CardImage"] {
+            display: none !important;
+        }
+
+        /* Card title (list = ListCardTitle, grid = CardHeading) + leading icon chip */
+        [class*="ListCardTitle"],
+        [class*="CardHeading"] {
             color: var(--ds-primary) !important;
             font-weight: 700 !important;
             display: flex !important;
             align-items: center !important;
         }
-        [class*="ListCardTitle"]::before {
+        [class*="ListCardTitle"]::before,
+        [class*="CardHeading"]::before {
             font-family: 'Material Symbols Outlined';
             font-weight: normal;
             font-style: normal;
@@ -70,15 +85,24 @@
             content: 'edit_document'; /* default fallback for any card */
         }
 
-        /* Per-card icons — order matches the files in admin/config.yml */
-        [class*="ListCard"]:nth-of-type(1) [class*="ListCardTitle"]::before { content: 'menu'; }            /* Navigation menu */
-        [class*="ListCard"]:nth-of-type(2) [class*="ListCardTitle"]::before { content: 'home'; }            /* Home page */
-        [class*="ListCard"]:nth-of-type(3) [class*="ListCardTitle"]::before { content: 'restaurant'; }      /* Products */
-        [class*="ListCard"]:nth-of-type(4) [class*="ListCardTitle"]::before { content: 'handshake'; }       /* Services */
-        [class*="ListCard"]:nth-of-type(5) [class*="ListCardTitle"]::before { content: 'info'; }            /* About page */
-        [class*="ListCard"]:nth-of-type(6) [class*="ListCardTitle"]::before { content: 'mail'; }            /* Contact page */
-        [class*="ListCard"]:nth-of-type(7) [class*="ListCardTitle"]::before { content: 'picture_as_pdf'; }  /* Brochure page */
-        [class*="ListCard"]:nth-of-type(8) [class*="ListCardTitle"]::before { content: 'web_asset'; }       /* Footer */
+        /* Per-card icons — order matches the files in admin/config.yml.
+           Applies to both list (ListCardTitle) and grid (CardHeading) layouts. */
+        [class*="ListCard"]:nth-of-type(1) [class*="ListCardTitle"]::before,
+        [class*="GridCard"]:nth-of-type(1) [class*="CardHeading"]::before { content: 'menu'; }            /* Navigation menu */
+        [class*="ListCard"]:nth-of-type(2) [class*="ListCardTitle"]::before,
+        [class*="GridCard"]:nth-of-type(2) [class*="CardHeading"]::before { content: 'home'; }            /* Home page */
+        [class*="ListCard"]:nth-of-type(3) [class*="ListCardTitle"]::before,
+        [class*="GridCard"]:nth-of-type(3) [class*="CardHeading"]::before { content: 'restaurant'; }      /* Products */
+        [class*="ListCard"]:nth-of-type(4) [class*="ListCardTitle"]::before,
+        [class*="GridCard"]:nth-of-type(4) [class*="CardHeading"]::before { content: 'handshake'; }       /* Services */
+        [class*="ListCard"]:nth-of-type(5) [class*="ListCardTitle"]::before,
+        [class*="GridCard"]:nth-of-type(5) [class*="CardHeading"]::before { content: 'info'; }            /* About page */
+        [class*="ListCard"]:nth-of-type(6) [class*="ListCardTitle"]::before,
+        [class*="GridCard"]:nth-of-type(6) [class*="CardHeading"]::before { content: 'mail'; }            /* Contact page */
+        [class*="ListCard"]:nth-of-type(7) [class*="ListCardTitle"]::before,
+        [class*="GridCard"]:nth-of-type(7) [class*="CardHeading"]::before { content: 'picture_as_pdf'; }  /* Brochure page */
+        [class*="ListCard"]:nth-of-type(8) [class*="ListCardTitle"]::before,
+        [class*="GridCard"]:nth-of-type(8) [class*="CardHeading"]::before { content: 'web_asset'; }       /* Footer */
     </style>
 </head>
 <body>
