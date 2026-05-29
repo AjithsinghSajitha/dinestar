@@ -10,9 +10,9 @@ publish_mode: editorial_workflow
 media_folder: assets/images/uploads
 public_folder: /assets/images/uploads
 
-site_url: https://ajithsinghsajitha.github.io/dinestar/
-display_url: https://ajithsinghsajitha.github.io/dinestar/
-logo_url: https://ajithsinghsajitha.github.io/dinestar/assets/images/ds-logo.svg
+site_url: https://dinestar.co.in/
+display_url: https://dinestar.co.in/
+logo_url: https://dinestar.co.in/assets/images/ds-logo.svg
 
 collections:
   - name: site_content

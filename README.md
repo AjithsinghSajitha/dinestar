@@ -3,8 +3,8 @@
 Static marketing site for DineStar palm leaf dinnerware, built with Jekyll
 and edited via Decap CMS. Deployed on GitHub Pages.
 
-- Live site: https://ajithsinghsajitha.github.io/dinestar/
-- CMS: https://ajithsinghsajitha.github.io/dinestar/admin/
+- Live site: https://dinestar.co.in/
+- CMS: https://dinestar.co.in/admin/
 
 ## Repo layout
 
