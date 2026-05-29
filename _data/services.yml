@@ -7,12 +7,6 @@ items:
       and eco- friendly.
     icon: event
     color: primary
-  - title: Custom Packaging Solutions
-    description: "Elevate your brand with custom-stamped palm leaf products like
-      bundled products (plates + cutlery + containers), Event kits, Catering
-      packs, etc "
-    icon: branding_watermark
-    color: secondary
   - title: "Logistics and Delivery Support "
     description: Local delivery and Bulk shipment coordination
     icon: inventory
