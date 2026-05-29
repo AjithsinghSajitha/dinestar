@@ -23,29 +23,28 @@ nav_active: contact
                     <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-bold text-primary mb-2" for="name">Full Name</label>
-                            <input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" id="name" name="name" placeholder="John Doe" type="text" required>
+                            <label class="block text-sm font-bold text-primary mb-2" for="name">{{ c.form.name_label }}</label>
+                            <input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" id="name" name="name" placeholder="{{ c.form.name_placeholder }}" type="text" required>
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-primary mb-2" for="email">Email Address</label>
-                            <input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" id="email" name="email" placeholder="john@example.com" type="email" required>
+                            <label class="block text-sm font-bold text-primary mb-2" for="email">{{ c.form.email_label }}</label>
+                            <input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" id="email" name="email" placeholder="{{ c.form.email_placeholder }}" type="email" required>
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-bold text-primary mb-2" for="enquiry-type">Subject</label>
+                        <label class="block text-sm font-bold text-primary mb-2" for="enquiry-type">{{ c.form.subject_label }}</label>
                         <select class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" id="enquiry-type" name="enquiry_type">
-                            <option>General Inquiry</option>
-                            <option>Wholesale Request</option>
-                            <option>Event Catering</option>
-                            <option>Custom Branding</option>
+                            {% for option in c.form.subjects %}
+                            <option>{{ option }}</option>
+                            {% endfor %}
                         </select>
                     </div>
                     <div>
-                        <label class="block text-sm font-bold text-primary mb-2" for="message">Message</label>
-                        <textarea class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all h-32" id="message" name="message" placeholder="How can we help you?" required></textarea>
+                        <label class="block text-sm font-bold text-primary mb-2" for="message">{{ c.form.message_label }}</label>
+                        <textarea class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all h-32" id="message" name="message" placeholder="{{ c.form.message_placeholder }}" required></textarea>
                     </div>
                     <button id="contact-submit" class="w-full py-4 organic-gradient text-on-primary rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform editorial-shadow disabled:opacity-60 disabled:cursor-not-allowed" type="submit">
-                        Send Message
+                        {{ c.form.submit_label }}
                     </button>
                     <p id="contact-status" class="text-center font-semibold hidden" role="status" aria-live="polite"></p>
                 </form>
@@ -54,7 +53,7 @@ nav_active: contact
             <!-- Contact Info -->
             <div class="flex flex-col justify-center space-y-12">
                 <div>
-                    <h3 class="text-2xl font-bold text-primary mb-6">Contact Information</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-6">{{ c.info_heading }}</h3>
                     <div class="space-y-6">
                         {% for item in c.info %}
                         <div class="flex items-center gap-4">
