@@ -1,0 +1,22 @@
+---
+layout: default
+title: Page Not Found | DineStar
+permalink: /404.html
+---
+<main class="pt-32 pb-24 min-h-[70vh] flex items-center">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+        <p class="text-tertiary font-semibold tracking-widest text-sm uppercase mb-4">Error 404</p>
+        <h1 class="text-7xl md:text-8xl font-extrabold text-primary mb-6 tracking-tighter">Page not found</h1>
+        <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-lg mx-auto">
+            The page you're looking for doesn't exist or may have moved. Let's get you back on track.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+            <a href="{{ '/' | relative_url }}" class="px-8 py-4 organic-gradient text-on-primary rounded-3xl font-bold text-lg hover:scale-105 transition-transform editorial-shadow">
+                Back to Home
+            </a>
+            <a href="{{ '/products.html' | relative_url }}" class="px-8 py-4 bg-surface-container-lowest text-primary border border-outline-variant/20 rounded-3xl font-bold text-lg hover:bg-surface-container-low transition-colors">
+                Browse Products
+            </a>
+        </div>
+    </div>
+</main>
