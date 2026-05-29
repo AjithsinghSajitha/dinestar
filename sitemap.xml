@@ -1,0 +1,13 @@
+---
+permalink: /sitemap.xml
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for item in site.data.navigation.items %}
+{%- assign pd = site.data[item.slug] %}
+{%- if item.slug == 'home' or pd.visible != false %}
+  <url><loc>{{ item.url | absolute_url }}</loc></url>
+{%- endif %}
+{%- endfor %}
+</urlset>
