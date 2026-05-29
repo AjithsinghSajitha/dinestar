@@ -13,9 +13,35 @@
             {% endfor %}
         </div>
         <div class="flex items-center gap-4">
-            <button class="md:hidden p-2 text-primary">
-                <span class="material-symbols-outlined">menu</span>
+            <button id="mobile-menu-button" class="md:hidden p-2 text-primary" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
             </button>
         </div>
     </div>
+    <!-- Mobile menu panel -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/10 bg-surface/95 glass-nav">
+        <div class="flex flex-col px-6 py-4 gap-1">
+            {% for item in site.nav %}
+                {% if item.slug == page.nav_active %}
+                    <a class="text-primary font-bold py-3 text-base tracking-wide" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% else %}
+                    <a class="text-secondary hover:text-primary transition-colors py-3 text-base tracking-wide" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
 </nav>
+<script>
+(function () {
+    var button = document.getElementById("mobile-menu-button");
+    var menu = document.getElementById("mobile-menu");
+    var icon = document.getElementById("mobile-menu-icon");
+    if (!button || !menu) return;
+    button.addEventListener("click", function () {
+        var isOpen = !menu.classList.contains("hidden");
+        menu.classList.toggle("hidden");
+        button.setAttribute("aria-expanded", String(!isOpen));
+        if (icon) icon.textContent = isOpen ? "menu" : "close";
+    });
+})();
+</script>

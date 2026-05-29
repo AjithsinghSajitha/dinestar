@@ -14,20 +14,26 @@ nav_active: contact
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <!-- Contact Form -->
             <div class="bg-surface-container-low rounded-3xl p-8 md:p-12 editorial-shadow">
-                <form class="space-y-6">
+                <form id="contact-form" class="space-y-6" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms access key — replace with your own from https://web3forms.com (free) -->
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                    <input type="hidden" name="from_name" value="DineStar Website">
+                    <input type="hidden" name="subject" value="New enquiry from DineStar website">
+                    <!-- Honeypot spam trap (hidden from real users) -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-bold text-primary mb-2" for="name">Full Name</label>
-                            <input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" id="name" placeholder="John Doe" type="text">
+                            <input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" id="name" name="name" placeholder="John Doe" type="text" required>
                         </div>
                         <div>
                             <label class="block text-sm font-bold text-primary mb-2" for="email">Email Address</label>
-                            <input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" id="email" placeholder="john@example.com" type="email">
+                            <input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" id="email" name="email" placeholder="john@example.com" type="email" required>
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-bold text-primary mb-2" for="subject">Subject</label>
-                        <select class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" id="subject">
+                        <label class="block text-sm font-bold text-primary mb-2" for="enquiry-type">Subject</label>
+                        <select class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" id="enquiry-type" name="enquiry_type">
                             <option>General Inquiry</option>
                             <option>Wholesale Request</option>
                             <option>Event Catering</option>
@@ -36,11 +42,12 @@ nav_active: contact
                     </div>
                     <div>
                         <label class="block text-sm font-bold text-primary mb-2" for="message">Message</label>
-                        <textarea class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all h-32" id="message" placeholder="How can we help you?"></textarea>
+                        <textarea class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all h-32" id="message" name="message" placeholder="How can we help you?" required></textarea>
                     </div>
-                    <button class="w-full py-4 organic-gradient text-on-primary rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform editorial-shadow" type="submit">
+                    <button id="contact-submit" class="w-full py-4 organic-gradient text-on-primary rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform editorial-shadow disabled:opacity-60 disabled:cursor-not-allowed" type="submit">
                         Send Message
                     </button>
+                    <p id="contact-status" class="text-center font-semibold hidden" role="status" aria-live="polite"></p>
                 </form>
             </div>
 
@@ -85,3 +92,47 @@ nav_active: contact
         </div>
     </div>
 </main>
+
+<script>
+(function () {
+    var form = document.getElementById("contact-form");
+    if (!form) return;
+    var button = document.getElementById("contact-submit");
+    var status = document.getElementById("contact-status");
+
+    function showStatus(message, ok) {
+        status.textContent = message;
+        status.classList.remove("hidden", "text-primary", "text-red-600");
+        status.classList.add(ok ? "text-primary" : "text-red-600");
+    }
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        button.disabled = true;
+        var original = button.textContent;
+        button.textContent = "Sending…";
+
+        fetch(form.action, {
+            method: "POST",
+            headers: { Accept: "application/json" },
+            body: new FormData(form),
+        })
+            .then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
+            .then(function (result) {
+                if (result.ok) {
+                    form.reset();
+                    showStatus("Thanks! Your message has been sent — we'll be in touch soon.", true);
+                } else {
+                    showStatus(result.data.message || "Something went wrong. Please try again.", false);
+                }
+            })
+            .catch(function () {
+                showStatus("Network error. Please check your connection and try again.", false);
+            })
+            .finally(function () {
+                button.disabled = false;
+                button.textContent = original;
+            });
+    });
+})();
+</script>

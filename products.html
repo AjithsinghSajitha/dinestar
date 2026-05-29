@@ -14,7 +14,7 @@ nav_active: products
             {% for product in site.data.products.items %}
             <div class="bg-surface-container-low rounded-2xl overflow-hidden editorial-shadow group">
                 <div class="aspect-square overflow-hidden">
-                    <img src="{{ product.image | relative_url }}" alt="{{ product.name }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer">
+                    <img src="{{ product.image | relative_url }}" alt="{{ product.name }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" referrerpolicy="no-referrer">
                 </div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-primary mb-2">{{ product.name }}</h3>
