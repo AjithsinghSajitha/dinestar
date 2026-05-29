@@ -1,6 +1,23 @@
 heading: Get in Touch
 subheading: Have questions about our products or services? We're here to help you transition to a more sustainable table.
 
+form:
+  name_label: Full Name
+  name_placeholder: John Doe
+  email_label: Email Address
+  email_placeholder: john@example.com
+  subject_label: Subject
+  subjects:
+    - General Inquiry
+    - Wholesale Request
+    - Event Catering
+    - Custom Branding
+  message_label: Message
+  message_placeholder: How can we help you?
+  submit_label: Send Message
+
+info_heading: Contact Information
+
 info:
   - icon: location_on
     color: primary

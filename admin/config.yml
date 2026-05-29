@@ -19,6 +19,20 @@ collections:
     label: Site content
     description: Edit the text and images on each page.
     files:
+      - file: _data/navigation.yml
+        name: navigation
+        label: Navigation menu
+        description: The links in the top navigation bar. Add, remove, or reorder them.
+        fields:
+          - label: Menu items
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Label, name: title, widget: string }
+              - { label: URL, name: url, widget: string, hint: "e.g. /products.html" }
+              - { label: Page slug (for active-link highlighting), name: slug, widget: string, required: false, hint: "Matches the page's nav_active; leave blank if unsure" }
+
       - file: _data/home.yml
         name: home
         label: Home page
@@ -103,8 +117,10 @@ collections:
       - file: _data/products.yml
         name: products
         label: Products
-        description: Cards shown on the Products page. Add, remove, or reorder them.
+        description: Page heading and the product cards. Add, remove, or reorder cards.
         fields:
+          - { label: Page heading, name: heading, widget: string }
+          - { label: Page intro text, name: intro, widget: text }
           - label: Products
             name: items
             widget: list
@@ -118,8 +134,10 @@ collections:
       - file: _data/services.yml
         name: services
         label: Services
-        description: Service items on the Our Services page.
+        description: Page heading and the service items on the Our Services page.
         fields:
+          - { label: Page heading, name: heading, widget: string }
+          - { label: Page intro text, name: intro, widget: text }
           - label: Services
             name: items
             widget: list
@@ -172,10 +190,27 @@ collections:
       - file: _data/contact.yml
         name: contact
         label: Contact page
-        description: Contact info and business hours (the form itself is fixed).
+        description: Page heading, the enquiry form labels, contact info, and business hours.
         fields:
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: text }
+          - label: Enquiry form
+            name: form
+            widget: object
+            fields:
+              - { label: Name field label, name: name_label, widget: string }
+              - { label: Name field placeholder, name: name_placeholder, widget: string }
+              - { label: Email field label, name: email_label, widget: string }
+              - { label: Email field placeholder, name: email_placeholder, widget: string }
+              - { label: Subject field label, name: subject_label, widget: string }
+              - label: Subject dropdown options
+                name: subjects
+                widget: list
+                field: { label: Option, name: option, widget: string }
+              - { label: Message field label, name: message_label, widget: string }
+              - { label: Message field placeholder, name: message_placeholder, widget: string }
+              - { label: Submit button label, name: submit_label, widget: string }
+          - { label: Contact info heading, name: info_heading, widget: string }
           - label: Contact info items
             name: info
             widget: list
@@ -218,8 +253,9 @@ collections:
       - file: _data/footer.yml
         name: footer
         label: Footer
-        description: Tagline, social links, and link columns shown at the bottom of every page.
+        description: Brand name, tagline, social links, and link columns shown at the bottom of every page.
         fields:
+          - { label: Brand name, name: brand_name, widget: string }
           - { label: Tagline, name: tagline, widget: text }
           - label: Social icon links
             name: social
