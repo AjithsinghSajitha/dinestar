@@ -30,7 +30,7 @@ nav_active: home
         </div>
         <div class="relative group">
             <div class="absolute -inset-4 bg-tertiary-container/10 rounded-full blur-3xl group-hover:bg-tertiary-container/20 transition-colors"></div>
-            <img alt="{{ hero.image_alt }}" class="relative rounded-2xl editorial-shadow w-full aspect-square object-cover transform rotate-2 hover:rotate-0 transition-transform duration-500" src="{{ hero.image | relative_url }}" referrerPolicy="no-referrer">
+            <img alt="{{ hero.image_alt }}" class="relative rounded-2xl editorial-shadow w-full aspect-square object-cover transform rotate-2 hover:rotate-0 transition-transform duration-500" src="{{ hero.image | relative_url }}" fetchpriority="high" decoding="async" referrerpolicy="no-referrer">
         </div>
     </div>
 </header>
@@ -50,7 +50,7 @@ nav_active: home
         <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-full md:h-[800px]">
             <!-- Featured (large) -->
             <div class="md:col-span-2 md:row-span-2 bg-surface-container-low rounded-2xl overflow-hidden relative group cursor-pointer">
-                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="{{ curated.featured.title }}" src="{{ curated.featured.image | relative_url }}" referrerPolicy="no-referrer">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="{{ curated.featured.title }}" src="{{ curated.featured.image | relative_url }}" loading="lazy" decoding="async" referrerpolicy="no-referrer">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex flex-col justify-end p-8">
                     {% if curated.featured.badge and curated.featured.badge != "" %}
                     <span class="text-on-primary-container bg-primary-container px-3 py-1 rounded-full text-xs font-bold w-fit mb-3">{{ curated.featured.badge }}</span>
@@ -61,14 +61,14 @@ nav_active: home
             </div>
             <!-- Secondary (wide) -->
             <div class="md:col-span-2 md:row-span-1 bg-surface-container-high rounded-2xl overflow-hidden relative group cursor-pointer">
-                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="{{ curated.secondary.title }}" src="{{ curated.secondary.image | relative_url }}" referrerPolicy="no-referrer">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="{{ curated.secondary.title }}" src="{{ curated.secondary.image | relative_url }}" loading="lazy" decoding="async" referrerpolicy="no-referrer">
                 <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors flex flex-col justify-end p-6">
                     <h4 class="text-2xl font-bold text-white">{{ curated.secondary.title }}</h4>
                 </div>
             </div>
             <!-- Small (image card) -->
             <div class="md:col-span-1 md:row-span-1 bg-surface-container-highest rounded-2xl overflow-hidden relative group cursor-pointer">
-                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="{{ curated.small.title }}" src="{{ curated.small.image | relative_url }}" referrerPolicy="no-referrer">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="{{ curated.small.title }}" src="{{ curated.small.image | relative_url }}" loading="lazy" decoding="async" referrerpolicy="no-referrer">
                 <div class="absolute inset-0 flex flex-col justify-end p-6">
                     <h4 class="text-xl font-bold text-primary">{{ curated.small.title }}</h4>
                 </div>
@@ -91,7 +91,7 @@ nav_active: home
         <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
             <div class="md:col-span-5">
                 <div class="relative">
-                    <img class="rounded-2xl editorial-shadow transform -rotate-3 w-full" alt="{{ heritage.image_alt }}" src="{{ heritage.image | relative_url }}" referrerPolicy="no-referrer">
+                    <img class="rounded-2xl editorial-shadow transform -rotate-3 w-full" alt="{{ heritage.image_alt }}" src="{{ heritage.image | relative_url }}" loading="lazy" decoding="async" referrerpolicy="no-referrer">
                     {% if heritage.badge and heritage.badge != "" %}
                     <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-primary rounded-2xl hidden md:flex items-center justify-center p-6 text-on-primary text-center leading-tight font-bold editorial-shadow">
                         {{ heritage.badge }}

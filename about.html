@@ -16,7 +16,7 @@ nav_active: about
                 {% endfor %}
             </div>
             <div class="relative">
-                <img src="{{ a.story.image | relative_url }}" alt="{{ a.story.image_alt }}" class="rounded-2xl editorial-shadow w-full" referrerPolicy="no-referrer">
+                <img src="{{ a.story.image | relative_url }}" alt="{{ a.story.image_alt }}" class="rounded-2xl editorial-shadow w-full" decoding="async" referrerpolicy="no-referrer">
                 <div class="absolute -bottom-6 -left-6 bg-primary-container text-on-primary-container p-8 rounded-2xl editorial-shadow hidden lg:block">
                     <p class="text-3xl font-bold mb-1">{{ a.story.stat_number }}</p>
                     <p class="text-sm uppercase tracking-widest font-bold">{{ a.story.stat_label }}</p>

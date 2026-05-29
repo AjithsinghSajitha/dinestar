@@ -2,68 +2,68 @@ items:
   - name: "6'' "
     description: Round Deep plate
     price: Rs. 5 / pc
-    image: /assets/images/uploads/6-round-deep-plate.png
+    image: /assets/images/uploads/6-round-deep-plate.webp
   - name: 8''
     description: "Deep Round Plate "
     price: Rs 3 / pc
-    image: /assets/images/uploads/chatgpt-image-apr-30-2026-01_29_31-am.png
+    image: /assets/images/uploads/chatgpt-image-apr-30-2026-01_29_31-am.webp
   - name: 10''
     description: "Round Deep Plate "
     price: Rs 3/pc
-    image: /assets/images/uploads/10-round-deep-plate.png
+    image: /assets/images/uploads/10-round-deep-plate.webp
   - name: 12''
     description: Deep round Plate
     price: Rs 3/pc
-    image: /assets/images/uploads/12-deep-round-plate.png
+    image: /assets/images/uploads/12-deep-round-plate.webp
   - name: 12''
     description: "4C Round Deep Plate "
     price: Rs 5/pc
-    image: /assets/images/uploads/12-4c-round-deep-plate.png
+    image: /assets/images/uploads/12-4c-round-deep-plate.webp
   - name: 3.5''
     description: Round Bowl
     price: Rs 2/pc
-    image: /assets/images/uploads/3.5-round-bowl.png
+    image: /assets/images/uploads/3.5-round-bowl.webp
   - name: 4''
     description: Square Deep Bowl
     price: Rs 3 / pc
-    image: /assets/images/uploads/4-square-deep-bowl.png
+    image: /assets/images/uploads/4-square-deep-bowl.webp
   - name: 5''
     description: Square Deep Bowl
     price: Rs 3/pc
-    image: /assets/images/uploads/5-square-deep-bowl.png
+    image: /assets/images/uploads/5-square-deep-bowl.webp
   - name: 6''
     description: "Square Plate "
     price: Rs 3/pc
-    image: /assets/images/uploads/6-sqaure-plate.png
+    image: /assets/images/uploads/6-sqaure-plate.webp
   - name: 8''
     description: "Square Plate "
     price: Rs 2 /pc
-    image: /assets/images/uploads/8-square-plate.png
+    image: /assets/images/uploads/8-square-plate.webp
   - name: 9''
     description: "3C Square Deep Plate "
     price: Rs 3/pc
-    image: /assets/images/uploads/9-square-3c-deep-plate.png
+    image: /assets/images/uploads/9-square-3c-deep-plate.webp
   - name: 9'' x 6''
     description: Rectangular Tray
     price: Rs 3/pc
-    image: /assets/images/uploads/9-x-6-rectangular-tray.png
+    image: /assets/images/uploads/9-x-6-rectangular-tray.webp
   - name: 500 ml
     description: "Container Box with Plastic Lid "
     price: Rs 4/ pc
-    image: /assets/images/uploads/500-ml-box-container-with-plastic-lid.png
+    image: /assets/images/uploads/500-ml-box-container-with-plastic-lid.webp
   - name: 750 ml
     description: "Box Container with Plastic Lid "
     price: Rs 4/pc
-    image: /assets/images/uploads/750-ml-container-box-with-plastic-lid.png
+    image: /assets/images/uploads/750-ml-container-box-with-plastic-lid.webp
   - name: "1000 ml "
     description: "Box Container with Plastic lid "
     price: Rs. 5 / pc
-    image: /assets/images/uploads/1000-ml-box-container-with-plastic-lid.png
+    image: /assets/images/uploads/1000-ml-box-container-with-plastic-lid.webp
   - name: 165 mm
     description: Wooden Forks
     price: Rs 1/pc
-    image: /assets/images/uploads/165-mm-wooden-forks.png
+    image: /assets/images/uploads/165-mm-wooden-forks.webp
   - name: 165 mm
     description: Wooden Spoons
     price: Rs 1 /pc
-    image: /assets/images/uploads/165mm-wooden-spoon.png
+    image: /assets/images/uploads/165mm-wooden-spoon.webp
