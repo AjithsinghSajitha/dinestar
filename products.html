@@ -3,6 +3,7 @@ layout: default
 title: Products | DineStar
 nav_active: products
 ---
+{% if site.data.products.visible == false %}{% include page_unavailable.html %}{% else %}
 <main class="pt-32 pb-24">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
         <header class="mb-16">
@@ -28,3 +29,4 @@ nav_active: products
         </div>
     </div>
 </main>
+{% endif %}

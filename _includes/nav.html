@@ -5,10 +5,13 @@
         </a>
         <div class="hidden md:flex items-center gap-8">
             {% for item in site.data.navigation.items %}
+                {% assign page_data = site.data[item.slug] %}
+                {% if item.slug == 'home' or page_data.visible != false %}
                 {% if item.slug == page.nav_active %}
                     <a class="text-primary font-bold border-b-2 border-primary pb-1 text-sm tracking-wide" href="{{ item.url | relative_url }}">{{ item.title }}</a>
                 {% else %}
                     <a class="text-secondary hover:text-primary transition-colors text-sm tracking-wide" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
                 {% endif %}
             {% endfor %}
         </div>
@@ -22,10 +25,13 @@
     <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/10 bg-surface/95 glass-nav">
         <div class="flex flex-col px-6 py-4 gap-1">
             {% for item in site.data.navigation.items %}
+                {% assign page_data = site.data[item.slug] %}
+                {% if item.slug == 'home' or page_data.visible != false %}
                 {% if item.slug == page.nav_active %}
                     <a class="text-primary font-bold py-3 text-base tracking-wide" href="{{ item.url | relative_url }}">{{ item.title }}</a>
                 {% else %}
                     <a class="text-secondary hover:text-primary transition-colors py-3 text-base tracking-wide" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
                 {% endif %}
             {% endfor %}
         </div>

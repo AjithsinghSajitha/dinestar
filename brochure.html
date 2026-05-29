@@ -4,6 +4,7 @@ title: Brochure | DineStar
 nav_active: brochure
 ---
 {% assign b = site.data.brochure %}
+{% if site.data.brochure.visible == false %}{% include page_unavailable.html %}{% else %}
 <main class="pt-32 pb-24">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
         <header class="mb-16 text-center">
@@ -34,3 +35,4 @@ nav_active: brochure
         </div>
     </div>
 </main>
+{% endif %}
