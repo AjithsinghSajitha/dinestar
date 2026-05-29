@@ -4,6 +4,7 @@ title: Contact Us | DineStar
 nav_active: contact
 ---
 {% assign c = site.data.contact %}
+{% if site.data.contact.visible == false %}{% include page_unavailable.html %}{% else %}
 <main class="pt-32 pb-24">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
         <header class="mb-16 text-center">
@@ -93,6 +94,7 @@ nav_active: contact
         </div>
     </div>
 </main>
+{% endif %}
 
 <!-- recaptchacompat=off: register as native hCaptcha, not reCAPTCHA (Web3Forms free supports hCaptcha only) -->
 <script src="https://js.hcaptcha.com/1/api.js?recaptchacompat=off" async defer></script>

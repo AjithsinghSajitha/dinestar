@@ -119,6 +119,7 @@ collections:
         label: Products
         description: Page heading and the product cards. Add, remove, or reorder cards.
         fields:
+          - { label: Show this page on the site, name: visible, widget: boolean, default: true, hint: "Turn off to hide this page and remove it from the menu." }
           - { label: Page heading, name: heading, widget: string }
           - { label: Page intro text, name: intro, widget: text }
           - label: Products
@@ -136,6 +137,7 @@ collections:
         label: Services
         description: Page heading and the service items on the Our Services page.
         fields:
+          - { label: Show this page on the site, name: visible, widget: boolean, default: true, hint: "Turn off to hide this page and remove it from the menu." }
           - { label: Page heading, name: heading, widget: string }
           - { label: Page intro text, name: intro, widget: text }
           - label: Services
@@ -160,6 +162,7 @@ collections:
         label: About page
         description: Our Story and Our Core Values sections.
         fields:
+          - { label: Show this page on the site, name: visible, widget: boolean, default: true, hint: "Turn off to hide this page and remove it from the menu." }
           - label: Story section
             name: story
             widget: object
@@ -192,6 +195,7 @@ collections:
         label: Contact page
         description: Page heading, the enquiry form labels, contact info, and business hours.
         fields:
+          - { label: Show this page on the site, name: visible, widget: boolean, default: true, hint: "Turn off to hide this page and remove it from the menu." }
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: text }
           - label: Enquiry form
@@ -238,6 +242,7 @@ collections:
         label: Brochure page
         description: Content on the Brochure download page.
         fields:
+          - { label: Show this page on the site, name: visible, widget: boolean, default: true, hint: "Turn off to hide this page and remove it from the menu." }
           - { label: Page heading, name: heading, widget: string }
           - { label: Page subheading, name: subheading, widget: text }
           - { label: Collection title, name: collection_title, widget: string }
