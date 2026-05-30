@@ -2,8 +2,10 @@ brand_name: DineStar
 tagline: Redefining dinnerware through the wisdom of nature. Premium palm leaf containers for a sustainable future.
 
 social:
-  - { icon: public, url: "#", label: Website }
-  - { icon: mail,   url: "#", label: Email }
+  - { icon: linkedin,  url: "#", label: LinkedIn }
+  - { icon: instagram, url: "#", label: Instagram }
+  - { icon: facebook,  url: "#", label: Facebook }
+  - { icon: twitter,   url: "#", label: Twitter }
 
 columns:
   - heading: Company

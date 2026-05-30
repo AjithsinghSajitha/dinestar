@@ -267,7 +267,7 @@ collections:
             widget: list
             summary: "{{fields.label}}"
             fields:
-              - { label: Icon (Material Symbol), name: icon, widget: string, hint: "e.g. public, mail, phone" }
+              - { label: Icon, name: icon, widget: string, hint: "Brand icons: linkedin, instagram, facebook, twitter. Or any Material Symbol name (e.g. public, mail, phone)." }
               - { label: URL, name: url, widget: string }
               - { label: Accessible label, name: label, widget: string }
           - label: Link columns
