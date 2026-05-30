@@ -22,15 +22,19 @@ info:
   - icon: location_on
     color: primary
     label: Our Headquarters
-    value: 123 Palm Grove Ave, Eco City, EC 45678
+    value: "Trivandrum, Kerala, Pin: 695561"
   - icon: call
     color: secondary
-    label: Phone Number
-    value: +1 (555) 123-4567
-  - icon: mail
+    label: Phone (India)
+    value: +91 9074010825
+  - icon: call
     color: tertiary
+    label: Phone (Mauritius)
+    value: +230 70116630
+  - icon: mail
+    color: surface
     label: Email Address
-    value: hello@dinestar.com
+    value: contact@dinestar.co.in
 
 hours_heading: Business Hours
 hours:
