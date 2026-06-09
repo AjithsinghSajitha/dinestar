@@ -30,7 +30,7 @@ collections:
             summary: "{{fields.title}}"
             fields:
               - { label: Label, name: title, widget: string }
-              - { label: URL, name: url, widget: string, hint: "e.g. /products.html" }
+              - { label: URL, name: url, widget: string, hint: "e.g. /products/" }
               - { label: Page slug (for active-link highlighting), name: slug, widget: string, required: false, hint: "Matches the page's nav_active; leave blank if unsure" }
 
       - file: _data/home.yml
@@ -58,7 +58,7 @@ collections:
               - { label: Eyebrow, name: eyebrow, widget: string }
               - { label: Heading, name: heading, widget: string }
               - { label: View-all link label, name: view_all_label, widget: string }
-              - { label: View-all link URL, name: view_all_url, widget: string, hint: "e.g. /products.html or # for none" }
+              - { label: View-all link URL, name: view_all_url, widget: string, hint: "e.g. /products/ or # for none" }
               - label: Featured card (large)
                 name: featured
                 widget: object

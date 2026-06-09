@@ -1,19 +1,19 @@
 items:
   - title: Home
-    url: /index.html
+    url: /
     slug: home
   - title: Products
-    url: /products.html
+    url: /products/
     slug: products
   - title: Our Services
-    url: /services.html
+    url: /services/
     slug: services
   - title: About Us
-    url: /about.html
+    url: /about/
     slug: about
   - title: Brochure
-    url: /brochure.html
+    url: /brochure/
     slug: brochure
   - title: Contact Us
-    url: /contact.html
+    url: /contact/
     slug: contact

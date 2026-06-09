@@ -10,16 +10,16 @@ social:
 columns:
   - heading: Company
     links:
-      - { label: About Us, url: /about.html }
+      - { label: About Us, url: /about/ }
       - { label: Sustainability Report, url: "#" }
       - { label: Our Process, url: "#" }
       - { label: Terms of Service, url: "#" }
   - heading: Solutions
     links:
       - { label: Wholesale Inquiries, url: "#" }
-      - { label: Event Services, url: /services.html }
-      - { label: Brochure, url: /brochure.html }
-      - { label: Privacy Policy, url: /contact.html }
+      - { label: Event Services, url: /services/ }
+      - { label: Brochure, url: /brochure/ }
+      - { label: Privacy Policy, url: /contact/ }
 
 copyright_owner: DineStar Sustainable Solutions
 copyright_suffix: Crafted with 100% natural palm leaves.
