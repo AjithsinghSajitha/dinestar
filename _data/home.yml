@@ -12,7 +12,7 @@ curated_essentials:
   eyebrow: The Collection
   heading: Curated Essentials
   view_all_label: View All Products
-  view_all_url: /products.html
+  view_all_url: /products/
   featured:
     badge: Bestseller
     title: Dinnerware Sets
